@@ -1,346 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#090a0c" />
-  <meta name="description" content="LOCX Games — indie games, active projects, upcoming releases, devlogs, and multiplayer experiences." />
-  <title>LOCX Games</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#060709">
+<meta name="description" content="Locx Productions — games, film, apps, books, manga, and original creative projects.">
+<title>Home | Locx Productions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="noise"></div>
-  <div class="top-glow"></div>
-
-  <header class="site-header" id="top">
-    <a class="brand" href="#home" aria-label="LOCX Games home">
-      <div class="brand-mark"><span>LX</span></div>
-      <div class="brand-copy">
-        <strong>LOCX</strong>
-        <span>GAMES</span>
+<body><div class="site-shell">
+<header class="site-header">
+  <a class="brand brand-logo-link" href="index.html">
+    <img class="brand-logo" src="assets/locx-productions-logo-optimized.png" alt="Locx Productions logo">
+  </a>
+  <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="primary-nav"><a href="index.html" class="active">Home</a>
+<a href="games.html" class="">Games</a>
+<a href="movies.html" class="">Movies</a>
+<a href="apps.html" class="">Apps</a>
+<a href="books-manga.html" class="">Books & Manga</a>
+<a href="projects.html" class="">Projects</a>
+<a href="news.html" class="">News</a></nav>
+  <a class="header-action" href="contact.html">Contact</a>
+</header><main>
+<section class="hero">
+  <div class="hero-layout">
+    <div>
+      <div class="kicker">Independent production studio</div>
+      <h1>Locx<br>Productions<span>Stories. Games. Software.</span></h1>
+      <p>
+        Locx Productions is the home for original games, applications, film projects,
+        future books and manga, and the tools behind them. This site is a showcase for
+        projects in development — not a browser-game portal.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="projects.html">Browse Projects →</a>
+        <a class="btn" href="news.html">Latest Updates</a>
       </div>
-    </a>
-
-    <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="nav" id="nav">
-      <a class="nav-link active" href="#home">Home</a>
-      <a class="nav-link" href="#games">Games</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#upcoming">Upcoming</a>
-      <a class="nav-link" href="#devlog">Devlog</a>
-      <a class="nav-link" href="#about">About</a>
-    </nav>
-
-    <a class="header-cta" href="#contact">Contact</a>
-  </header>
-
-  <main>
-    <section class="hero section" id="home">
-      <div class="hero-grid"></div>
-      <div class="hero-content reveal">
-        <div class="eyebrow"><span class="live-dot"></span> INDEPENDENT GAME DEVELOPMENT</div>
-        <h1>Games built to be<br><span>played together.</span></h1>
-        <p>
-          LOCX Games is the home for original games, multiplayer experiments,
-          creative tools, and ambitious projects currently being built under LOCX.
-          Follow development, see what is in progress, and get a look at what is coming next.
-        </p>
-        <div class="hero-actions">
-          <a href="#games" class="btn btn-primary">View Games <span>→</span></a>
-          <a href="#upcoming" class="btn btn-secondary">See What's Next</a>
-        </div>
-        <div class="hero-stats">
-          <div><strong>FOLLOW</strong><span>Game development</span></div>
-          <div><strong>BUILD</strong><span>Active projects</span></div>
-          <div><strong>DISCOVER</strong><span>Upcoming projects</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="visual-frame">
-          <div class="visual-status">
-            <span><i></i> LOCX NETWORK</span>
-            <span>ONLINE</span>
-          </div>
-          <div class="lx-emblem">
-            <div class="emblem-ring ring-a"></div>
-            <div class="emblem-ring ring-b"></div>
-            <div class="emblem-core">LOCX</div>
-          </div>
-          <div class="visual-bottom">
-            <span>GAMES • PROJECTS • MULTIPLAYER</span>
-            <span>EST. // LOCX</span>
-          </div>
-        </div>
-      </div>
-
-      <a class="scroll-cue" href="#games"><span></span>SCROLL</a>
-    </section>
-
-    <section class="section section-dark" id="games">
-      <div class="section-heading reveal">
-        <div>
-          <span class="kicker">01 / GAMES</span>
-          <h2>Featured <em>Games</em></h2>
-        </div>
-        <p>Explore LOCX titles, multiplayer games, prototypes, and projects currently in development.</p>
-      </div>
-
-      <div class="showcase-notice reveal">
-        <strong>Development Showcase</strong>
-        <span>Games shown here are project previews and development updates. They are not currently hosted or playable directly on this website.</span>
-      </div>
-
-      <div class="filter-bar reveal" data-target="gamesGrid">
-        <button class="filter active" data-filter="all">All Games</button>
-        <button class="filter" data-filter="multiplayer">Multiplayer</button>
-        <button class="filter" data-filter="card">Card & Strategy</button>
-        <button class="filter" data-filter="arcade">Arcade</button>
-      </div>
-
-      <div class="card-grid games-grid" id="gamesGrid">
-        <article class="game-card featured reveal" data-category="card multiplayer">
-          <div class="card-art art-tripp">
-            <span class="status-pill development">IN DEVELOPMENT</span>
-            <div class="fake-logo">TRIPP<br><b>ATTACK</b></div>
-          </div>
-          <div class="card-body">
-            <div class="card-meta"><span>TACTICAL CARD GAME</span><span>2 PLAYER</span></div>
-            <h3>Tripp Attack</h3>
-            <p>A competitive 3×3 card battler inspired by classic directional capture mechanics, rebuilt as a modern LOCX multiplayer experience.</p>
-            <div class="tag-row"><span>Strategy</span><span>Cards</span><span>Multiplayer</span></div>
-            <button class="text-link project-open" data-project="tripp">View Project <span>↗</span></button>
-          </div>
-        </article>
-
-        <article class="game-card reveal" data-category="arcade multiplayer">
-          <div class="card-art art-redline">
-            <span class="status-pill testing">PLAYTESTING</span>
-            <div class="fake-logo narrow">RED<span>LINE</span></div>
-          </div>
-          <div class="card-body">
-            <div class="card-meta"><span>COMPETITIVE ARCADE</span><span>MULTIPLAYER</span></div>
-            <h3>REDLine</h3>
-            <p>A fast competitive darts experience built around direct multiplayer matches, loadouts, invites, and quick rematches.</p>
-            <div class="tag-row"><span>Arcade</span><span>Darts</span><span>Online</span></div>
-            <button class="text-link project-open" data-project="redline">View Project <span>↗</span></button>
-          </div>
-        </article>
-
-        <article class="game-card reveal" data-category="arcade multiplayer">
-          <div class="card-art art-bowlout">
-            <span class="status-pill development">IN DEVELOPMENT</span>
-            <div class="fake-logo narrow">BOWL<span>OUT</span></div>
-          </div>
-          <div class="card-body">
-            <div class="card-meta"><span>BOWLING</span><span>MULTIPLAYER</span></div>
-            <h3>BowlOut</h3>
-            <p>A stylized bowling game with customizable equipment, alternate presentation modes, and connected multiplayer play.</p>
-            <div class="tag-row"><span>Sports</span><span>Bowling</span><span>Multiplayer</span></div>
-            <button class="text-link project-open" data-project="bowlout">View Project <span>↗</span></button>
-          </div>
-        </article>
-
-        <article class="game-card reveal" data-category="card multiplayer">
-          <div class="card-art art-roll">
-            <span class="status-pill concept">ACTIVE PROJECT</span>
-            <div class="fake-logo">ROLL TO<br><b>RICHES</b></div>
-          </div>
-          <div class="card-body">
-            <div class="card-meta"><span>BOARD GAME</span><span>2–4 PLAYER</span></div>
-            <h3>Roll To Riches</h3>
-            <p>A digital property-and-strategy board game with a premium table presentation and multiplayer-first game setup.</p>
-            <div class="tag-row"><span>Board Game</span><span>Strategy</span><span>Social</span></div>
-            <button class="text-link project-open" data-project="roll">View Project <span>↗</span></button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section projects-section" id="projects">
-      <div class="section-heading reveal">
-        <div>
-          <span class="kicker">02 / PROJECTS</span>
-          <h2>Beyond the <em>Games</em></h2>
-        </div>
-        <p>LOCX also develops software, creative tools, experiments, and connected systems.</p>
-      </div>
-
-      <div class="project-list">
-        <article class="project-row reveal">
-          <div class="project-number">01</div>
-          <div class="project-icon shield-icon">L</div>
-          <div class="project-copy">
-            <div class="project-title-line"><h3>LOCX Shield</h3><span>SECURITY SOFTWARE</span></div>
-            <p>A dark red, charcoal, and silver security platform concept focused on scanning, system protection, repair workflows, and a clean control center.</p>
-          </div>
-          <div class="project-state">ACTIVE</div>
-        </article>
-
-        <article class="project-row reveal">
-          <div class="project-number">02</div>
-          <div class="project-icon node-icon">AI</div>
-          <div class="project-copy">
-            <div class="project-title-line"><h3>LOCX Sidekick</h3><span>LOCAL AI SYSTEM</span></div>
-            <p>A local-first AI assistant and model-routing environment built around development workflows, coding, automation, and private local inference.</p>
-          </div>
-          <div class="project-state">ACTIVE</div>
-        </article>
-
-        <article class="project-row reveal">
-          <div class="project-number">03</div>
-          <div class="project-icon forge-icon">F</div>
-          <div class="project-copy">
-            <div class="project-title-line"><h3>Creative Tooling</h3><span>ASSET PIPELINES</span></div>
-            <p>Internal pipelines for game art, sprites, 3D generation, card systems, UI production, and faster content iteration across LOCX projects.</p>
-          </div>
-          <div class="project-state muted-state">ONGOING</div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-dark upcoming-section" id="upcoming">
-      <div class="upcoming-layout">
-        <div class="upcoming-intro reveal">
-          <span class="kicker">03 / UPCOMING</span>
-          <h2>What's being<br><em>built next.</em></h2>
-          <p>
-            This is the place for upcoming LOCX releases, experiments, prototypes,
-            and development goals. Projects move quickly, so expect this list to evolve.
-          </p>
-          <div class="progress-key">
-            <span><i class="p-red"></i>Active Development</span>
-            <span><i class="p-silver"></i>Planning / Pre-production</span>
-          </div>
-        </div>
-
-        <div class="roadmap reveal">
-          <article class="road-item">
-            <div class="road-line"><span style="--progress:86%"></span></div>
-            <div class="road-top"><span>NOW</span><b>Multiplayer & Release Readiness</b></div>
-            <p>End-to-end game flow, invites, device-to-device testing, presentation polish, and friend-ready play.</p>
-          </article>
-          <article class="road-item">
-            <div class="road-line"><span style="--progress:68%"></span></div>
-            <div class="road-top"><span>NEXT</span><b>Tripp Attack Expansion</b></div>
-            <p>Card content, selector systems, match presentation, rule coverage, and stronger competitive polish.</p>
-          </article>
-          <article class="road-item">
-            <div class="road-line silver"><span style="--progress:42%"></span></div>
-            <div class="road-top"><span>PLANNED</span><b>More LOCX Originals</b></div>
-            <p>New multiplayer concepts and standalone game experiences that fit into the broader LOCX ecosystem.</p>
-          </article>
-          <article class="road-item">
-            <div class="road-line silver"><span style="--progress:26%"></span></div>
-            <div class="road-top"><span>PLANNED</span><b>Community Features</b></div>
-            <p>More ways to share updates, highlight releases, surface playtests, and connect players to new builds.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section devlog-section" id="devlog">
-      <div class="section-heading reveal">
-        <div>
-          <span class="kicker">04 / DEVLOG</span>
-          <h2>From the <em>Workbench</em></h2>
-        </div>
-        <p>Updates, milestones, experiments, and behind-the-scenes notes from current development.</p>
-      </div>
-
-      <div class="dev-grid">
-        <article class="dev-card big reveal">
-          <div class="dev-date"><b>07</b><span>AUG<br>2026</span></div>
-          <span class="dev-category">LOCX GAMES</span>
-          <h3>Building a stronger home for every LOCX project.</h3>
-          <p>The new LOCX Games site brings games, active projects, upcoming work, and development updates together in one place.</p>
-          <button class="text-link modal-news" data-news="site">Read Update <span>→</span></button>
-        </article>
-        <article class="dev-card reveal">
-          <div class="dev-date"><b>06</b><span>AUG<br>2026</span></div>
-          <span class="dev-category">TRIPP ATTACK</span>
-          <h3>Card game presentation moves into polish.</h3>
-          <p>Menus, card selection, match framing, and game-flow presentation are being tightened around the classic tabletop feel.</p>
-          <button class="text-link modal-news" data-news="tripp">Read Update <span>→</span></button>
-        </article>
-        <article class="dev-card reveal">
-          <div class="dev-date"><b>03</b><span>AUG<br>2026</span></div>
-          <span class="dev-category">MULTIPLAYER</span>
-          <h3>Friend-ready multiplayer remains a core target.</h3>
-          <p>Testing focuses on real two-device flows, invites, reconnect behavior, and reliable play instead of isolated local prototypes.</p>
-          <button class="text-link modal-news" data-news="multi">Read Update <span>→</span></button>
-        </article>
-      </div>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="about-panel reveal">
-        <div class="about-mark">LOCX</div>
-        <div class="about-copy">
-          <span class="kicker">05 / ABOUT</span>
-          <h2>Built in public. Released when ready.</h2>
-          <p>
-            LOCX Games is built around making original experiences without flattening
-            every idea into the same formula. Some projects are competitive. Some are
-            experimental. Some grow into larger connected systems. The common thread is
-            simple: build something worth releasing, improve it aggressively, and keep moving.
-          </p>
-          <div class="about-values">
-            <span>PLAYER-FIRST</span>
-            <span>MULTIPLAYER</span>
-            <span>ORIGINAL PROJECTS</span>
-            <span>LOCAL-FIRST TOOLS</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="contact-inner reveal">
-        <span class="kicker">06 / CONTACT</span>
-        <h2>Want to follow the build?</h2>
-        <p>Use this section for community links, development updates, business contact, Discord, socials, or future release announcements.</p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:contact@locxgames.link">contact@locxgames.link</a>
-          <button class="btn btn-secondary copy-domain" data-copy="locxgames.link">Copy Domain</button>
-        </div>
-        <small>Replace the contact address or add your real Discord / social links before publishing.</small>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <a class="brand footer-brand" href="#top">
-      <div class="brand-mark"><span>LX</span></div>
-      <div class="brand-copy"><strong>LOCX</strong><span>GAMES</span></div>
-    </a>
-    <p>© <span id="year"></span> LOCX Games. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#games">Games</a>
-      <a href="#projects">Projects</a>
-      <a href="#upcoming">Upcoming</a>
-      <a href="#devlog">Devlog</a>
     </div>
-  </footer>
-
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-box">
-      <button class="modal-close" data-close-modal aria-label="Close">×</button>
-      <span class="kicker" id="modalKicker">PROJECT</span>
-      <h2 id="modalTitle">Project</h2>
-      <p id="modalText"></p>
-      <div class="modal-tags" id="modalTags"></div>
+    <div class="hero-panel">
+      <img class="hero-main-logo" src="assets/locx-productions-logo-optimized.png" alt="Locx Productions logo">
     </div>
   </div>
+</section>
 
-  <div class="toast" id="toast">Copied to clipboard</div>
-  <script src="script.js"></script>
-</body>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">What Locx makes</div><h2 class="section-title">Production <em>Divisions</em></h2></div>
+      <p>Each division has its own page, so visitors can find exactly what they care about without digging through one giant landing page.</p>
+    </div>
+    <div class="category-grid">
+      <a class="category-card" href="games.html"><div class="icon">G</div><h3>Games</h3><p>Original multiplayer, strategy, arcade, board-game, and experimental game projects.</p><div class="go">Open Games <span>→</span></div></a>
+      <a class="category-card" href="movies.html"><div class="icon">F</div><h3>Movies</h3><p>Film concepts, productions, development notes, trailers, and future release information.</p><div class="go">Open Movies <span>→</span></div></a>
+      <a class="category-card" href="apps.html"><div class="icon">A</div><h3>Apps</h3><p>Software, creative utilities, local-first AI tools, security projects, and production applications.</p><div class="go">Open Apps <span>→</span></div></a>
+      <a class="category-card" href="books-manga.html"><div class="icon">B</div><h3>Books</h3><p>Future novels, lore books, production books, and original written projects.</p><div class="go">Open Publishing <span>→</span></div></a>
+      <a class="category-card" href="books-manga.html#manga"><div class="icon">M</div><h3>Manga</h3><p>Future serialized manga, graphic storytelling, concept art, and world-building projects.</p><div class="go">Open Manga <span>→</span></div></a>
+      <a class="category-card" href="projects.html"><div class="icon">P</div><h3>All Projects</h3><p>A clean master index of active, upcoming, experimental, and long-term Locx projects.</p><div class="go">Project Index <span>→</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">Featured now</div><h2 class="section-title">Current <em>Work</em></h2></div>
+      <p>These are showcase pages only. Public play/download links can be added later when builds are ready to distribute.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-art"><div class="wordmark">TRIPP<br><b>ATTACK</b></div></div>
+        <div class="feature-body"><span class="status">Active Development</span><h3>Tripp Attack</h3><p>Competitive directional card battling with a 3×3 board, custom card systems, and multiplayer-first design.</p><a class="btn" href="tripp-attack.html">Project Page →</a></div>
+      </article>
+      <article class="feature-card">
+        <div class="feature-art silver"><div class="wordmark">LOCX<br><b>SHIELD</b></div></div>
+        <div class="feature-body"><span class="status silver">Software Project</span><h3>Locx Shield</h3><p>A standalone security application concept with scanning, protection, repair workflows, and a unified control center.</p><a class="btn" href="locx-shield.html">Project Page →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-box">
+      <div><div class="kicker">Follow development</div><h2>See what Locx is building next.</h2><p>News, project pages, upcoming releases, and future production announcements live here.</p></div>
+      <a class="btn primary" href="news.html">View News →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand brand-logo-link footer-brand-logo">
+      <img class="brand-logo footer-logo" src="assets/locx-productions-logo-optimized.png" alt="Locx Productions logo">
+    </div>
+    <p>© 2026 Locx Productions. All rights reserved.</p>
+    <div class="footer-links"><a href="games.html">Games</a> <a href="movies.html">Movies</a> <a href="apps.html">Apps</a> <a href="books-manga.html">Books & Manga</a> <a href="projects.html">Projects</a> <a href="news.html">News</a><a href="contact.html">Contact</a></div>
+  </div>
+</footer></div><script src="script.js"></script></body>
 </html>

@@ -1,58 +1,36 @@
-# LOCX Games Website
+# Locx Productions Website
 
-A responsive static website for **locxgames.link**.
+This is a multi-page static website for **locxgames.link**, rebranded from a game-only site to **Locx Productions**.
 
-## Included
-- `index.html`
-- `styles.css`
-- `script.js`
-
-## Main sections
-- Home / hero
+## Pages
+- Home
 - Games
+- Movies
+- Apps
+- Books & Manga
 - Projects
-- Upcoming / roadmap
-- Devlog
-- About
+- News / Devlog
 - Contact
+- Dedicated project pages for:
+  - Tripp Attack
+  - REDLine
+  - BowlOut
+  - Roll To Riches
+  - Locx Shield
+  - Locx Sidekick
 
-## Theme
-- Black / charcoal base
-- Deep red LOCX accents
-- Silver typography and borders
-- Responsive desktop / tablet / phone layout
+## Important
+The site does **not** claim that games are playable in-browser. Game pages are development/showcase pages. Public play, download, store, trailer, preorder, or reading links can be added only when those things actually exist.
 
-## Publish
+## Publishing
+Upload every file in this folder to the same public web directory. `index.html` is the homepage.
 
-### Cloudflare Pages
-1. Create a new Cloudflare Pages project.
-2. Upload these files or connect a Git repository.
-3. Build command: none.
-4. Output directory: `/` (site root).
-5. Add the custom domain `locxgames.link`.
-6. In DNS, follow Cloudflare's Pages domain instructions.
+For Cloudflare Pages, there is no build command required for this static version.
 
-### GitHub Pages
-1. Put the files in a repository.
-2. Open Settings → Pages.
-3. Deploy from the main branch/root.
-4. Add `locxgames.link` as the custom domain.
-5. Update DNS to the records GitHub provides.
+## Before launch
+- Replace the placeholder `contact@locxgames.link` if that inbox does not exist.
+- Add actual Discord/social links.
+- Add real screenshots, posters, covers, logos, trailers, downloads, store links, or chapter links as each project becomes public.
 
-### Traditional hosting / cPanel
-Upload `index.html`, `styles.css`, and `script.js` into the site's public web root (commonly `public_html`).
-
-## Before going live
-- Replace `contact@locxgames.link` if that inbox does not exist.
-- Add your real Discord/social/store/playtest links.
-- Replace generated CSS title art with screenshots/key art when available.
-- Update game descriptions/statuses as releases progress.
-
-## Editing content
-Most text and project names are directly in `index.html`.
-Modal descriptions are in the `content` object inside `script.js`.
-Colors are CSS variables near the top of `styles.css`.
-
-
-## Current website role
-This version is a **showcase/development website**. Games are not hosted or playable directly on the site yet. Game cards open information panels only. Download/store/play buttons can be added later when public builds are ready.
+## Branding update
+The site now uses the uploaded LOCX Productions logo image in the header, footer, and homepage hero area.
