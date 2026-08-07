@@ -1,27 +1,3 @@
-
-const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.primary-nav');
-menuBtn?.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  document.body.classList.toggle('menu-open', open);
-  menuBtn.setAttribute('aria-expanded', String(open));
-});
-document.querySelectorAll('.primary-nav a').forEach(a => {
-  a.addEventListener('click', () => {
-    nav.classList.remove('open');
-    document.body.classList.remove('menu-open');
-  });
-});
-document.querySelectorAll('[data-copy]').forEach(btn => {
-  btn.addEventListener('click', async () => {
-    const value = btn.dataset.copy;
-    try{
-      await navigator.clipboard.writeText(value);
-      const old = btn.textContent;
-      btn.textContent = 'Copied';
-      setTimeout(()=>btn.textContent = old, 1400);
-    }catch{
-      window.prompt('Copy this:', value);
-    }
-  });
-});
+const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');menu?.addEventListener('click',()=>{const o=nav.classList.toggle('open');document.body.classList.toggle('menu-open',o);menu.setAttribute('aria-expanded',String(o))});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');document.body.classList.remove('menu-open')}));
+document.querySelectorAll('[data-tabs]').forEach(group=>{const buttons=[...group.querySelectorAll('.tab-btn')],panels=[...group.querySelectorAll('.tab-panel')];buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.toggle('active',b===btn));panels.forEach(p=>p.classList.toggle('active',p.dataset.panel===btn.dataset.tab))}))});
+document.querySelectorAll('[data-filter-group]').forEach(group=>{const buttons=[...group.querySelectorAll('.filter-btn')];const target=document.querySelector(group.dataset.filterGroup);buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.toggle('active',b===btn));const f=btn.dataset.filter;target?.querySelectorAll('.filter-card').forEach(card=>card.classList.toggle('hidden',f!=='all'&&!card.dataset.category.split(' ').includes(f))) }))});
