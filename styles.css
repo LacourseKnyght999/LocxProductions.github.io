@@ -225,3 +225,16 @@ footer p{color:#666c75;font-size:11px}
   *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
 }
+
+.showcase-notice{
+  display:flex;align-items:center;gap:16px;padding:14px 16px;margin:-18px 0 26px;
+  border:1px solid #30343b;border-left:3px solid var(--red);background:#0d0f12;
+  color:#8d939c;font-size:12px;line-height:1.5
+}
+.showcase-notice strong{
+  flex:none;font-family:Rajdhani;text-transform:uppercase;letter-spacing:1.4px;
+  color:#e5e7ea;font-size:12px
+}
+@media(max-width:760px){
+  .showcase-notice{align-items:flex-start;flex-direction:column;gap:5px}
+}

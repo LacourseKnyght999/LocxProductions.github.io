@@ -52,3 +52,7 @@ Upload `index.html`, `styles.css`, and `script.js` into the site's public web ro
 Most text and project names are directly in `index.html`.
 Modal descriptions are in the `content` object inside `script.js`.
 Colors are CSS variables near the top of `styles.css`.
+
+
+## Current website role
+This version is a **showcase/development website**. Games are not hosted or playable directly on the site yet. Game cards open information panels only. Download/store/play buttons can be added later when public builds are ready.
