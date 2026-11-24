@@ -38,9 +38,12 @@
       </div>
     </section>
 
-    <section class="game-art" aria-label="CodeQuest key art">
+    <section class="game-art" aria-label="CodeQuest">
       <div class="shell">
-        <img src="assets/images/code-quest-keyart.jpg" alt="CodeQuest title over a moonlit castle">
+        <button class="game-poster" id="videoOpen" type="button" aria-label="Play the CodeQuest video">
+          <img src="assets/images/code-quest-keyart.jpg" alt="CodeQuest title over a moonlit castle">
+          <span class="play-mark" aria-hidden="true"></span>
+        </button>
       </div>
     </section>
 
@@ -65,8 +68,37 @@
       <p class="footer-legal">© <span id="year">2026</span> LOCX Industries. Founded by LK999 &amp; AB696.</p>
     </div>
   </footer>
+  <dialog class="video-dialog" id="videoDialog" aria-label="CodeQuest video">
+    <button class="dialog-close" id="videoClose" type="button" aria-label="Close video">×</button>
+    <video id="gameVideo" controls playsinline preload="none" poster="assets/images/code-quest-keyart.jpg">
+      <source src="assets/video/code-quest-demo.mp4" type="video/mp4">
+      Your browser cannot play this video.
+    </video>
+  </dialog>
+
   <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var dialog = document.getElementById('videoDialog');
+      var video = document.getElementById('gameVideo');
+      var open = document.getElementById('videoOpen');
+      var close = document.getElementById('videoClose');
+      if (!dialog || !video || !open) return;
+      open.addEventListener('click', function () {
+        if (dialog.showModal) dialog.showModal(); else dialog.setAttribute('open', '');
+        video.play().catch(function () {});
+      });
+      close.addEventListener('click', function () {
+        video.pause();
+        if (dialog.close) dialog.close(); else dialog.removeAttribute('open');
+      });
+      dialog.addEventListener('click', function (e) {
+        if (e.target === dialog) { video.pause(); if (dialog.close) dialog.close(); }
+      });
+      dialog.addEventListener('close', function () { video.pause(); });
+    })();
+  </script>
 </body>
 </html>
