@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-type="software" data-radius="soft" data-buttons="solid">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Code Quest demo. Write real C++ and see it run.">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <title>Code Quest | LOCX Industries</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/images/locx-emblem.png" alt="">
+        <span class="brand-text"><strong>LOCX</strong><span>INDUSTRIES</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="releases.html">Releases</a>
+        <a href="addons.html">Blender Addons</a>
+        <a href="about.html">About</a>
+        <a href="devlog.html">Devlog</a>
+        <a class="nav-cta" href="contact.html">Contact studio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" data-enter>
+      <div class="shell">
+        <h1>Code Quest</h1>
+        <p class="page-lede">Write real C++. Watch it run.</p>
+      </div>
+    </section>
+
+    <section class="demo-section" aria-labelledby="demoTitle">
+      <div class="shell">
+        <h2 id="demoTitle">The demo</h2>
+        <button class="demo-poster" id="demoOpen" type="button" aria-label="Play the Code Quest demo video">
+          <img src="assets/images/code-quest-poster.jpg" alt="Code Quest title over a moonlit castle">
+          <span class="play-mark" aria-hidden="true"></span>
+          <span class="demo-label">Play demo</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img class="brand-mark small" src="assets/images/locx-emblem.png" alt="">
+        <span><strong>LOCX INDUSTRIES</strong><small>Vibe Coded. Precision Built.</small></span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="releases.html">Releases</a><a href="addons.html">Blender Addons</a><a href="about.html">About</a><a href="devlog.html">Devlog</a><a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-legal">© <span id="year">2026</span> LOCX Industries. Founded by LK999 &amp; AB696.</p>
+    </div>
+  </footer>
+
+  <dialog class="video-dialog" id="videoDialog" aria-label="Code Quest demo video">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="Close video">×</button>
+    <video id="demoVideo" controls playsinline preload="none" poster="assets/images/code-quest-poster.jpg">
+      <source src="assets/video/code-quest-demo.mp4" type="video/mp4">
+      Your browser cannot play this video.
+    </video>
+  </dialog>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var dialog = document.getElementById('videoDialog');
+      var video = document.getElementById('demoVideo');
+      var open = document.getElementById('demoOpen');
+      var close = document.getElementById('dialogClose');
+      if (!dialog || !video || !open) return;
+      open.addEventListener('click', function () {
+        if (dialog.showModal) dialog.showModal(); else dialog.setAttribute('open', '');
+        video.play().catch(function () {});
+      });
+      close.addEventListener('click', function () {
+        video.pause();
+        if (dialog.close) dialog.close(); else dialog.removeAttribute('open');
+      });
+      dialog.addEventListener('click', function (e) {
+        if (e.target === dialog) { video.pause(); if (dialog.close) dialog.close(); }
+      });
+      dialog.addEventListener('close', function () { video.pause(); });
+    })();
+  </script>
+</body>
+</html>
