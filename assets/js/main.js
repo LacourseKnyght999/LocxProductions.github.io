@@ -61,25 +61,6 @@
     if (close) close.addEventListener('click', function () { ctaDismissed = true; ctaBar.classList.remove('visible'); });
   }
 
-  // Scroll reveal
-  var revealItems = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -40px 0px', threshold: 0.08 });
-    revealItems.forEach(function (el, i) {
-      el.style.transitionDelay = (i % 3) * 70 + 'ms';
-      observer.observe(el);
-    });
-  } else {
-    revealItems.forEach(function (el) { el.classList.add('in'); });
-  }
-
   // Toast helper
   function showToast(message) {
     if (!toast) return;
