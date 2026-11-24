@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Code Quest demo. Write real C++ and see it run.">
+  <meta name="description" content="CodeQuest is the game where you learn coding by playing.">
   <meta name="theme-color" content="#101a2b">
   <meta name="page-type" content="software">
   <meta name="site-kind" content="software">
-  <title>Code Quest | LOCX Industries</title>
+  <title>CodeQuest | LOCX Industries</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -33,19 +33,22 @@
   <main id="main">
     <section class="page-hero" data-enter>
       <div class="shell">
-        <h1>Code Quest</h1>
-        <p class="page-lede">Write real C++. Watch it run.</p>
+        <h1>Introducing CodeQuest</h1>
+        <p class="page-lede">The game where you learn coding by playing.</p>
       </div>
     </section>
 
-    <section class="demo-section" aria-labelledby="demoTitle">
+    <section class="game-art" aria-label="CodeQuest key art">
       <div class="shell">
-        <h2 id="demoTitle">The demo</h2>
-        <button class="demo-poster" id="demoOpen" type="button" aria-label="Play the Code Quest demo video">
-          <img src="assets/images/code-quest-poster.jpg" alt="Code Quest title over a moonlit castle">
-          <span class="play-mark" aria-hidden="true"></span>
-          <span class="demo-label">Play demo</span>
-        </button>
+        <img src="assets/images/code-quest-keyart.jpg" alt="CodeQuest title over a moonlit castle">
+      </div>
+    </section>
+
+    <section class="game-copy">
+      <div class="shell">
+        <h2>Write real C++</h2>
+        <p>CodeQuest puts you in a world that responds to the code you write. Each quest asks for a small change, then a harder one. When something breaks, the game shows you where it went wrong.</p>
+        <p>You finish with code you wrote yourself, not a lesson you clicked through.</p>
       </div>
     </section>
   </main>
@@ -62,38 +65,8 @@
       <p class="footer-legal">© <span id="year">2026</span> LOCX Industries. Founded by LK999 &amp; AB696.</p>
     </div>
   </footer>
-
-  <dialog class="video-dialog" id="videoDialog" aria-label="Code Quest demo video">
-    <button class="dialog-close" id="dialogClose" type="button" aria-label="Close video">×</button>
-    <video id="demoVideo" controls playsinline preload="none" poster="assets/images/code-quest-poster.jpg">
-      <source src="assets/video/code-quest-demo.mp4" type="video/mp4">
-      Your browser cannot play this video.
-    </video>
-  </dialog>
-
   <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="assets/js/main.js"></script>
-  <script>
-    (function () {
-      var dialog = document.getElementById('videoDialog');
-      var video = document.getElementById('demoVideo');
-      var open = document.getElementById('demoOpen');
-      var close = document.getElementById('dialogClose');
-      if (!dialog || !video || !open) return;
-      open.addEventListener('click', function () {
-        if (dialog.showModal) dialog.showModal(); else dialog.setAttribute('open', '');
-        video.play().catch(function () {});
-      });
-      close.addEventListener('click', function () {
-        video.pause();
-        if (dialog.close) dialog.close(); else dialog.removeAttribute('open');
-      });
-      dialog.addEventListener('click', function (e) {
-        if (e.target === dialog) { video.pause(); if (dialog.close) dialog.close(); }
-      });
-      dialog.addEventListener('close', function () { video.pause(); });
-    })();
-  </script>
 </body>
 </html>
