@@ -1,5 +1,20 @@
 (function () {
   'use strict';
+  // Anti-copy deterrents. These raise effort; they cannot stop a determined visitor.
+  document.addEventListener('contextmenu', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'IMG' || (t.closest && t.closest('img')))) e.preventDefault();
+  });
+  document.addEventListener('dragstart', function (e) {
+    if (e.target && e.target.tagName === 'IMG') e.preventDefault();
+  });
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) e.preventDefault();
+  });
+})();
+
+(function () {
+  'use strict';
 
   var header = document.getElementById('siteHeader');
   var toggle = document.getElementById('navToggle');
