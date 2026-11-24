@@ -6,9 +6,10 @@
   <meta name="description" content="Workbench notes from LOCX Industries on release state, local-first design and portable packaging.">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="theme-color" content="#101a2b">
-  <title>Devlog — LOCX Industries</title>
+  <title>Devlog | LOCX Industries</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/dossier.css">
 </head>
 <!-- LI-CANARY-20261124-7F3A -->
 <body>
@@ -40,15 +41,15 @@
       <div class="shell">
         <div class="section-head reveal">
           <div>
-            <p class="eyebrow"><span class="eyebrow-bar"></span> 05 — Devlog</p>
+            <p class="eyebrow"><span class="eyebrow-bar"></span> 05 / Devlog</p>
             <h2 id="devlogTitle">Workbench notes.</h2>
           </div>
           <p class="section-note">Short notes on direction and craft from the studio workbench.</p>
         </div>
         <div class="notes-grid">
-          <article class="note-card reveal"><span class="note-index">NOTE 01</span><h3>A release library, not a wish list</h3><p>The studio now tracks every product by its real release state — packaged, approved, published or archived. A build only moves up when licensing, clean-machine testing and advertised functionality are verified.</p></article>
-          <article class="note-card reveal"><span class="note-index">NOTE 02</span><h3>Local by default, on purpose</h3><p>Our tools run on your machine. External services are opt-in and labelled, and a missing engine is reported honestly rather than silently faked in the interface.</p></article>
-          <article class="note-card reveal"><span class="note-index">NOTE 03</span><h3>Packaging without hardcoded paths</h3><p>We replaced dozens of machine-specific drive paths with a portable resolver, so a release can be moved or installed on a clean machine without breaking. Portability is a release gate, not an afterthought.</p></article>
+          <article class="note-card reveal"><span class="note-index">NOTE 01</span><h3>Four shelves, one rule</h3><p>We keep a folder with four shelves: built, checked, for sale, published. A build only moves when the licence, a clean install and the advertised features actually hold up.</p></article>
+          <article class="note-card reveal"><span class="note-index">NOTE 02</span><h3>It runs on your machine</h3><p>Our tools run on your machine. If a service is optional, the interface says so. If an engine isn't installed, it says that too.</p></article>
+          <article class="note-card reveal"><span class="note-index">NOTE 03</span><h3>Pulling the drive letters out</h3><p>We pulled dozens of hardcoded drive paths out of 3D Studio. It should install anywhere without needing a developer's folder layout.</p></article>
         </div>
       </div>
     </section>
@@ -67,6 +68,7 @@
   </footer>
   <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/dossier.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

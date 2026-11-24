@@ -63,6 +63,10 @@ All product artwork is real, not placeholder illustration:
 
 If you regenerate captures, keep the same discipline: no error text, no unrelated windows, no private names.
 
+## Copy pass
+
+Public prose was rewritten with the Humanizer v4.0.0 rules (`blader/humanizer`): no em dashes, no staged openers, no "not X but Y" padding, no forced triads, no decorative bold or arrows, no chatbot residue. Status wording uses plain phrases like "IN FINAL CHECKS" and "INTERNAL ALPHA" rather than "pending approval".
+
 ## Visual system
 
 Blue / silver / grey / white. Machined edges, fine grid, no neon glow. Headings use Windows' Bahnschrift with Segoe UI fallbacks; body uses Segoe UI; technical labels use a monospace stack.

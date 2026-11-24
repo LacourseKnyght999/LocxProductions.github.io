@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LOCX Legal — development alpha, staged for internal review. A local federal research workspace. Not approved for sale, promotion or legal advice.">
+  <meta name="description" content="LOCX Legal is an internal alpha, a local workspace for federal research. Not for sale and not legal advice.">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="theme-color" content="#101a2b">
-  <title>LOCX Legal — LOCX Industries</title>
+  <title>LOCX Legal | LOCX Industries</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/dossier.css">
 </head>
 <!-- LI-CANARY-20261124-7F3A -->
 <body data-lead-endpoint="">
@@ -38,9 +39,9 @@
         <p class="breadcrumb"><a href="index.html">Home</a> / Releases / LOCX Legal</p>
         <p class="eyebrow"><span class="eyebrow-bar"></span> Development alpha · staged for internal review</p>
         <h1>LOCX Legal</h1>
-        <p class="detail-lede">A local research and matter workspace with a real index of 49,092 federal authority sections. This is a development alpha — not approved for sale, promotion or distribution to customers.</p>
+        <p class="detail-lede">A local research and matter workspace with 49,092 federal authority sections indexed. Still an internal alpha. Not something we're selling or handing out.</p>
         <div class="detail-tags">
-          <span class="chip chip-pending">Alpha · Pending approval</span>
+          <span class="chip chip-pending">INTERNAL ALPHA</span>
           <span class="chip">Not for sale</span>
           <span class="chip">Local workspace</span>
         </div>
@@ -51,7 +52,7 @@
       <div class="shell">
         <figure class="detail-shot legal-shot reveal">
           <img src="assets/images/legal-01-overview.png" alt="LOCX Legal overview showing matter records, indexed federal authorities and a pleading-style matter caption">
-          <figcaption>Overview — the alpha label and "not legal representation" notice are part of the interface and remain visible in every capture.</figcaption>
+          <figcaption>Overview. The alpha label and the "not legal representation" notice are part of the interface and stay visible in every capture.</figcaption>
         </figure>
       </div>
 
@@ -65,27 +66,27 @@
 
           <div class="detail-note reveal">
             <p class="hand-label">read this first</p>
-            <p>“Legal research is not legal representation. Authorities, jurisdiction and deadlines must be verified by qualified counsel. AI output can be wrong.”</p>
-            <span class="hand-sign">— LOCX Legal alpha notice</span>
+            <p>"Legal research is not legal representation. Authorities, jurisdiction and deadlines must be verified by qualified counsel. AI output can be wrong."</p>
+            <span class="hand-sign">LOCX Legal alpha notice</span>
           </div>
 
           <div class="detail-block">
             <h2>The five views</h2>
             <figure class="detail-shot legal-shot reveal">
               <img src="assets/images/legal-02-matter-workspace.png" alt="Matter docket and record editor with evidence, timeline, claim and task entries">
-              <figcaption>Matter workspace — evidence, timeline, claims and tasks in one record.</figcaption>
+              <figcaption>Matter workspace: evidence, timeline, claims and tasks in one record.</figcaption>
             </figure>
             <figure class="detail-shot legal-shot reveal">
               <img src="assets/images/legal-03-authority-library.png" alt="Federal statute search result with citation, heading, release point and official source link">
-              <figcaption>Authority library — a real federal statute result with citation and official source link.</figcaption>
+              <figcaption>Authority library: a real federal statute result with citation and official source link.</figcaption>
             </figure>
             <figure class="detail-shot legal-shot reveal">
               <img src="assets/images/legal-04-research-counsel.png" alt="Source-backed research memorandum with retrieved authorities">
-              <figcaption>Research counsel — a memorandum answer built on retrieved authorities.</figcaption>
+              <figcaption>Research counsel: a memorandum answer built on retrieved authorities.</figcaption>
             </figure>
             <figure class="detail-shot legal-shot reveal">
               <img src="assets/images/legal-05-privacy-settings.png" alt="Local and remote model configuration with encrypted credential handling">
-              <figcaption>AI &amp; privacy settings — local/remote model choice with OS-encrypted credential handling.</figcaption>
+              <figcaption>AI &amp; privacy settings: local/remote model choice with OS-encrypted credential handling.</figcaption>
             </figure>
           </div>
 
@@ -98,7 +99,7 @@
               <li>All five views visually reviewed; integrity manifest hashes 43 files</li>
             </ul>
             <div class="callout">
-              <strong>Open release blockers.</strong>
+              Still open:
               <p>Knowledge-source rights, citation fidelity and currentness; AI reliability and safe-output review; privacy/security audit and clean-machine installation; portable runtime decision; verified live provider, installer and accessible-layout QA; legal review of claims and redistribution rights.</p>
             </div>
           </div>
@@ -108,9 +109,9 @@
 
         <aside class="side-panel" aria-label="Release status">
           <h3>Release state</h3>
-          <div class="side-row"><span>Status</span><span>Alpha · Pending</span></div>
+          <div class="side-row"><span>Status</span><span>Internal alpha</span></div>
           <div class="side-cta">
-            <a class="button button-primary" href="access.html?product=legal" data-product="legal">Get status updates <span aria-hidden="true">→</span></a>
+            <a class="button button-primary" href="access.html?product=legal" data-product="legal">Get status updates</a>
             <small>Internal review only. No sale, promotion or customer distribution.</small>
           </div>
           <div class="side-row"><span>Build</span><span>development alpha</span></div>
@@ -147,6 +148,7 @@
 
   <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/dossier.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
