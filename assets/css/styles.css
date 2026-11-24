@@ -492,6 +492,34 @@ img.brand-mark, img.brand-mark.small { object-fit: contain; }
 .about .principle h3 { color: var(--ink); }
 .about .principle p { color: #52637b; }
 
+/* ---------- Taste layer ---------- */
+@keyframes li-enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.hero[data-enter] .hero-copy > * { animation: li-enter .7s cubic-bezier(.2,.7,.2,1) both; }
+.hero[data-enter] .hero-copy > *:nth-child(2) { animation-delay: .08s; }
+.hero[data-enter] .hero-copy > *:nth-child(3) { animation-delay: .16s; }
+.hero[data-enter] .hero-copy > *:nth-child(4) { animation-delay: .24s; }
+.hero[data-enter] .hero-shot-main { animation: li-enter .9s cubic-bezier(.2,.7,.2,1) .15s both; }
+.hero[data-enter] .hero-shot-sub { animation: li-enter .9s cubic-bezier(.2,.7,.2,1) .32s both; }
+
+.button:active { transform: translateY(1px); }
+.text-link, .mini-cta { background-image: linear-gradient(var(--blue), var(--blue)); background-size: 0 1px; background-repeat: no-repeat; background-position: left bottom; transition: background-size .25s ease; }
+.text-link:hover, .mini-cta:hover { background-size: 100% 1px; }
+
+.hub-grid { gap: 0 28px; }
+.hub-card { background: transparent; border: 0; border-bottom: 1px solid rgba(117,145,182,.25); border-radius: 0; padding: 24px 0 26px; }
+.hub-card:hover { background: transparent; box-shadow: none; transform: none; border-bottom-color: var(--blue); }
+.hub-card > span { font-size: 11px; }
+.hub-card b { position: relative; }
+
+.note-paper { border: 0; border-left: 3px solid var(--blue); border-radius: 0; background: transparent; padding: 12px 0 12px 38px; }
+.note-paper h2 { font-size: clamp(36px, 5vw, 62px); line-height: 1.05; margin: 10px 0 22px; }
+.note-paper p { font-size: 18px; max-width: 760px; }
+.workbench-note { padding: 86px 0 94px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero[data-enter] .hero-copy > *, .hero[data-enter] .hero-shot-main, .hero[data-enter] .hero-shot-sub { animation: none; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .hero-inner { grid-template-columns: 1fr; gap: 60px; padding-block: 70px 90px; }

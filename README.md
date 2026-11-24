@@ -67,6 +67,10 @@ If you regenerate captures, keep the same discipline: no error text, no unrelate
 
 Public prose was rewritten with the Humanizer v4.0.0 rules (`blader/humanizer`): no em dashes, no staged openers, no "not X but Y" padding, no forced triads, no decorative bold or arrows, no chatbot residue. The site presents products with version and build labels only. It carries no pending/coming-soon/early-access language and makes no sale or release claims.
 
+## Design rules in use
+
+Applied the taste-skill rules for a software site: real product UI in the hero, no captions or labels under images, one type-led moment, equal content edges, hero entrance and hover/press motion, and a single button and card system. Copy follows Humanizer v4.0.0.
+
 ## Visual system
 
 Blue / silver / grey / white. Clean editorial layout, rounded panels, generous space, real product screenshots in the hero. No instrument-panel framing, rulers, brackets or neon glow. Headings use Windows' Bahnschrift with Segoe UI fallbacks; body uses Segoe UI; small labels use a monospace stack.
