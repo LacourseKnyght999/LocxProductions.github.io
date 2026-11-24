@@ -69,4 +69,4 @@ Public prose was rewritten with the Humanizer v4.0.0 rules (`blader/humanizer`):
 
 ## Visual system
 
-Blue / silver / grey / white. Machined edges, fine grid, no neon glow. Headings use Windows' Bahnschrift with Segoe UI fallbacks; body uses Segoe UI; technical labels use a monospace stack.
+Blue / silver / grey / white. Clean editorial layout, rounded panels, generous space, real product screenshots in the hero. No instrument-panel framing, rulers, brackets or neon glow. Headings use Windows' Bahnschrift with Segoe UI fallbacks; body uses Segoe UI; small labels use a monospace stack.

@@ -9,7 +9,6 @@
   <title>LOCX Storyboard Studio | LOCX Industries</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/dossier.css">
 </head>
 <!-- LI-CANARY-20261124-7F3A -->
 <body>
@@ -59,11 +58,11 @@
             <h2>What it does</h2>
             <p>Storyboard Studio keeps projects, scenes and shots on your own machine. Each shot carries camera direction, prompts, audio and dialogue notes, and timing. Scenes and shots can be reordered, and projects export and import as JSON.</p>
             <p>The reference library holds characters, locations, props and costumes with optional uploaded images. The Concept Mixboard is an integrated, freeform canvas for image, colour and note cards. You can move, resize, zoom, undo and combine visuals, then send a finished image straight into a storyboard shot.</p>
-            <p>Image generation is a real, optional provider: configure an OpenAI key for full generate / edit / remix, or point it at compatible local executables for text-to-image. With no provider configured, everything except generation still works, and the interface says so plainly.</p>
+            <p>Image generation is optional. Configure an OpenAI key for generate, edit and remix, or point the app at local text-to-image executables. Without a provider, everything else still works and the interface says so.</p>
           </div>
 
           <div class="detail-note reveal">
-            <p class="hand-label">from the workbench</p>
+            <p class="hand-label">Note</p>
             <p>"We made this because story canon kept drifting between documents, images and shots. One local place for all of it, with no pretend generators when no provider is configured."</p>
             <span class="hand-sign">LK and AB</span>
           </div>
@@ -77,7 +76,7 @@
               <li>Character, location, prop and costume reference library</li>
               <li>Concept Mixboard: cards, zoom, pan, undo/redo, PNG export</li>
               <li>Send a mixboard image to a scene as a linked shot</li>
-              <li>Optional real image providers, with no simulated generations</li>
+              <li>Optional image providers. No fake generated images</li>
               <li>MCP adapter so an agent can operate scene and shot data</li>
             </ul>
           </div>
@@ -134,7 +133,6 @@
   </footer>
   <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="assets/js/dossier.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
