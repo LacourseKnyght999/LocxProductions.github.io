@@ -65,7 +65,7 @@ If you regenerate captures, keep the same discipline: no error text, no unrelate
 
 ## Copy pass
 
-Public prose was rewritten with the Humanizer v4.0.0 rules (`blader/humanizer`): no em dashes, no staged openers, no "not X but Y" padding, no forced triads, no decorative bold or arrows, no chatbot residue. Status wording uses plain phrases like "IN FINAL CHECKS" and "INTERNAL ALPHA" rather than "pending approval".
+Public prose was rewritten with the Humanizer v4.0.0 rules (`blader/humanizer`): no em dashes, no staged openers, no "not X but Y" padding, no forced triads, no decorative bold or arrows, no chatbot residue. The site presents products with version and build labels only. It carries no pending/coming-soon/early-access language and makes no sale or release claims.
 
 ## Visual system
 

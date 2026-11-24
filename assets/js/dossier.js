@@ -16,7 +16,7 @@
       var strip = document.createElement('div');
       strip.className = 'sys-strip';
       strip.innerHTML = '<div class="shell">' +
-        '<span><i class="sys-blip"></i>SYS.STATUS <b>NOMINAL</b> &nbsp;/&nbsp; RELEASE LIBRARY <b>ONLINE</b></span>' +
+        '<span><i class="sys-blip"></i>LOCX INDUSTRIES <b>ONLINE</b> &nbsp;/&nbsp; LOCAL BY DEFAULT</span>' +
         '<span class="sys-right">LI-DOSSIER / REV 2026.11 / LOCAL-FIRST / HUMAN IMAGINATION · MACHINE VELOCITY</span>' +
         '</div>';
       header.parentNode.insertBefore(strip, header.nextSibling);
@@ -59,12 +59,13 @@
     Array.prototype.forEach.call(sections, function (head, i) {
       if (head.querySelector('.part-watermark')) return;
       var h2 = head.querySelector('h2');
+      var note = head.querySelector('.section-note');
       if (h2) {
         var mark = document.createElement('span');
         mark.className = 'part-watermark';
         mark.setAttribute('aria-hidden', 'true');
         mark.textContent = String(i + 1).padStart(2, '0');
-        h2.appendChild(mark);
+        (note || h2).appendChild(mark);
       }
     });
 
@@ -90,7 +91,7 @@
         '<div><span>Drawing no.</span><strong>LI-001</strong></div>' +
         '<div><span>Revision</span><strong>2026.11 / A</strong></div>' +
         '<div><span>Issued by</span><strong>LK999 &amp; AB696</strong></div>' +
-        '<div><span>Status</span><strong>PUBLIC RELEASE</strong></div>';
+        '<div><span>Index</span><strong>PRODUCTS</strong></div>';
       var inner = footer.querySelector('.footer-inner') || footer;
       var legal = footer.querySelector('.footer-legal');
       if (legal && legal.parentNode === inner) inner.insertBefore(block, legal);
