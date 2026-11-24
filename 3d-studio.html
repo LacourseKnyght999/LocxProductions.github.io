@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LOCX 3D Studio v1.0.0 — packaged, pending approval. A local offline 3D asset workshop with a 12/12 automated ship gate.">
+  <meta name="theme-color" content="#101a2b">
+  <title>LOCX 3D Studio — LOCX Industries</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/images/locx-emblem.png" alt="">
+        <span class="brand-text"><strong>LOCX</strong><span>INDUSTRIES</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="releases.html">Releases</a>
+        <a href="addons.html">Blender Addons</a>
+        <a href="access.html">Early access</a>
+        <a href="about.html">About</a>
+        <a href="devlog.html">Devlog</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="access.html?product=3d" data-product="3d">Request access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="detail-hero">
+      <div class="shell">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Releases / 3D Studio</p>
+        <p class="eyebrow"><span class="eyebrow-bar"></span> Packaged release · 02 of 03</p>
+        <h1>LOCX 3D Studio</h1>
+        <p class="detail-lede">A local, offline 3D asset workshop. Image to geometry, texturing, mesh optimization, rigging helpers, QA and GLB export — in one app that keeps your work on your machine.</p>
+        <div class="detail-tags">
+          <span class="chip chip-pending">Pending approval</span>
+          <span class="chip">v1.0.0</span>
+          <span class="chip">Windows 10/11 x64</span>
+          <span class="chip">Ship gate 12/12</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-body">
+    <div class="shell">
+      <figure class="detail-shot reveal">
+        <img src="assets/images/locx-3d-studio.jpg" alt="Actual LOCX 3D Studio modular viewport with part library and inspector">
+        <figcaption>LOCX 3D Studio — actual application capture. Pending-approval build.</figcaption>
+      </figure>
+    </div>
+
+      <div class="shell detail-grid">
+        <div>
+          <div class="detail-block">
+            <h2>What it does</h2>
+            <p>The studio covers the path from a single reference image to a checked, exportable GLB. Work areas include image-to-3D, PBR retexturing of existing meshes, Blender-based optimization that preserves UVs and materials, GLB clip playback, asset versions and structural QA, plus Unreal handoff helpers.</p>
+            <p>Nothing is uploaded. The app talks only to local loopback services. Model packs are deliberately not bundled — the lightweight payload ships with a setup CLI that discovers packs already on your machine or downloads only the ones you choose, then reports honestly when an engine is unavailable.</p>
+            <p>Portability was rebuilt from the ground up: 47 hardcoded drive paths were replaced with a resolver that reads configuration, environment variables and portable defaults. The app can be moved or relocated without breaking.</p>
+          </div>
+
+          <div class="detail-note reveal">
+            <p class="hand-label">from the workbench</p>
+            <p>“The rule was simple: nothing leaves the machine, and no engine silently pretends to work. If a route isn't ready, the app says so.”</p>
+            <span class="hand-sign">— the LOCX studio</span>
+          </div>
+
+          <div class="detail-block">
+            <h3>Workflows</h3>
+            <ul class="detail-list">
+              <li>Image to 3D — single or primary reference to textured GLB</li>
+              <li>Texture generation — PBR retexturing of an existing mesh</li>
+              <li>Optimize model — decimation with UV/PBR preserved</li>
+              <li>Rig &amp; animate — GLB clip playback; auto-rig is safety-gated</li>
+              <li>Asset library and workshop QA — versions, references, structural checks</li>
+              <li>Export — GLB, plus Unreal handoff helpers</li>
+            </ul>
+          </div>
+
+          <div class="detail-block">
+            <h2>Requirements &amp; payload</h2>
+            <p>Windows 10/11 x64. NVIDIA GPU with CUDA for generation workflows — the viewer and UI work without one. Blender 4.2+ for optimize, bake, repair and environment workflows. Python 3.11–3.13 for a few worker scripts. Disk space for whichever model packs you download.</p>
+            <table class="file-table">
+              <thead><tr><th>Release item</th><th>Value</th></tr></thead>
+              <tbody>
+                <tr><td>Release files</td><td>119</td></tr>
+                <tr><td>Payload size</td><td>397.7 MB</td></tr>
+                <tr><td>Application package</td><td>8.9 MB</td></tr>
+                <tr><td>Model weights bundled</td><td>None</td></tr>
+                <tr><td>Automated ship gate</td><td>GO · 12/12</td></tr>
+              </tbody>
+            </table>
+            <div class="callout">
+              <strong>Technically ready — not legally cleared.</strong>
+              <p>The EULA is a template, several upstream model licences are non-commercial or gated, generation routes still need real GPU verification, and a locally compiled helper is not redistributable. Installer, signing and storefront preparation remain open.</p>
+            </div>
+          </div>
+
+          <a class="back-link" href="releases.html">← Back to releases</a>
+        </div>
+
+        <aside class="side-panel" aria-label="Release status">
+          <h3>Release state</h3>
+          <div class="side-row"><span>Status</span><span>Pending approval</span></div>
+          <div class="side-cta">
+            <a class="button button-primary" href="access.html?product=3d" data-product="3d">Request early access <span aria-hidden="true">→</span></a>
+            <small>No payment now. We'll email you when approval clears.</small>
+          </div>
+          <div class="side-row"><span>Version</span><span>1.0.0</span></div>
+          <div class="side-row"><span>Platform</span><span>Windows x64</span></div>
+          <div class="side-row"><span>Mode</span><span>Local / offline</span></div>
+          <div class="side-foot">
+            <p>Automated engineering checks:</p>
+            <div class="checklist">
+              <div class="check-row"><span class="mark">✓</span><span>Portability and path resolution</span></div>
+              <div class="check-row"><span class="mark">✓</span><span>Packaging and dev-cruft stripping</span></div>
+              <div class="check-row"><span class="mark">✓</span><span>Renderer startup hardening</span></div>
+              <div class="check-row"><span class="mark">✓</span><span>Reproducible release gate</span></div>
+              <div class="check-row open"><span class="mark">○</span><span>Model licence clearance</span></div>
+              <div class="check-row open"><span class="mark">○</span><span>End-to-end GPU route verification</span></div>
+              <div class="check-row open"><span class="mark">○</span><span>Installer, signing, storefront</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img class="brand-mark small" src="assets/images/locx-emblem.png" alt="">
+        <span><strong>LOCX INDUSTRIES</strong><small>Vibe Coded. Precision Built.</small></span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation"><a href="releases.html">Releases</a><a href="about.html">Studio</a><a href="contact.html">Contact</a></nav>
+      <p class="footer-legal">© <span id="year">2026</span> LOCX Industries. Status reflects the local release library at time of build.</p>
+    </div>
+  </footer>
+  <div class="cta-bar" id="ctaBar">
+    <div class="cta-bar-inner">
+      <p><strong>Interested in LOCX 3D Studio?</strong> Join the list and hear when it clears approval.</p>
+      <a class="button button-primary" href="access.html?product=3d" data-product="3d">Request early access <span aria-hidden="true">→</span></a>
+      <button class="cta-close" id="ctaClose" type="button" aria-label="Dismiss">×</button>
+    </div>
+  </div>
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

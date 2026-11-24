@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request early access to upcoming LOCX Industries releases. No payment now; real release notes when approval clears.">
+  <meta name="theme-color" content="#101a2b">
+  <title>Early Access — LOCX Industries</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/images/locx-emblem.png" alt="">
+        <span class="brand-text"><strong>LOCX</strong><span>INDUSTRIES</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="releases.html">Releases</a>
+        <a href="addons.html">Blender Addons</a>
+        <a href="access.html">Early access</a>
+        <a href="about.html">About</a>
+        <a href="devlog.html">Devlog</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="access.html">Get early access</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="section access" id="access" aria-labelledby="accessTitle">
+      <div class="shell access-grid">
+        <div class="access-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-bar"></span> 03 — Early access</p>
+          <h2 id="accessTitle">Get the release note.<br>Not the sales pitch.</h2>
+          <p>Our packaged releases are still in approval, the Blender add-on is in verification, and LOCX Legal is a development alpha staged for internal review only. Join the list and we'll email you the moment one clears — with the exact build, system requirements and licence terms, so you can decide with the real facts.</p>
+          <ul class="access-points">
+            <li><strong>No payment now.</strong> Nothing is charged from this page.</li>
+            <li><strong>One product or several.</strong> Tell us what you actually care about.</li>
+            <li><strong>Real notes only.</strong> Build hashes, known limits, and what was verified.</li>
+            <li><strong>Leave any time.</strong> One click, no guilt.</li>
+          </ul>
+          <p class="hand-label">small studio, short list, real emails</p>
+        </div>
+
+        <div class="access-form-wrap reveal">
+          <form class="access-form" id="accessForm" name="early-access" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="early-access">
+            <p class="honeypot" hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+            <div class="form-row">
+              <label>Your name<input type="text" name="name" id="leadName" autocomplete="name" required placeholder="What should we call you?"></label>
+              <label>Email address<input type="email" name="email" id="leadEmail" autocomplete="email" required placeholder="you@example.com"></label>
+            </div>
+            <div class="form-row">
+              <label>Which release?
+                <select name="product" id="leadProduct">
+                  <option value="all">All products — keep me posted</option>
+                  <option value="legal">LOCX Legal alpha — status updates only</option>
+                  <option value="storyboard">LOCX Storyboard Studio</option>
+                  <option value="3d">LOCX 3D Studio</option>
+                  <option value="aislesmith">AisleSmith Blender add-on</option>
+                  <option value="studio">General studio news</option>
+                </select>
+              </label>
+              <label>What will you use it for? <span class="optional">optional</span>
+                <input type="text" name="use" placeholder="e.g. pre-vis for a short film">
+              </label>
+            </div>
+            <label class="checkline"><input type="checkbox" name="consent" id="leadConsent" required><span>Email me about LOCX releases only. I can unsubscribe any time.</span></label>
+            <button class="button button-primary form-submit" type="submit">Request early access <span aria-hidden="true">→</span></button>
+            <p class="form-fine">No payment now. Products are not offered for sale until licensing, clean-machine testing and advertised functionality are verified.</p>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <span class="success-mark" aria-hidden="true">✓</span>
+            <h3>You're on the list.</h3>
+            <p>Thanks — we'll email you when your release clears approval, with the real build notes attached.</p>
+            <p id="mailFallbackWrap" hidden>If your mail app didn't open, <a id="fallbackMail" href="#">send the request manually</a>.</p>
+            <button class="text-link" type="button" id="resetForm">Add another email</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell">
+        <div class="faq reveal">
+          <div class="faq-head"><p class="eyebrow"><span class="eyebrow-bar"></span> Good questions</p><h2>Before you ask.</h2></div>
+          <div class="faq-list">
+            <details><summary>Can I buy one today?</summary><p>Not yet. Our packaged builds are still pending approval, and the Blender add-on is still in verification. When that changes, the release library moves the product to "Approved for Sale" and this site updates with it. The list above is how you hear about it first.</p></details>
+            <details><summary>What happens after I register?</summary><p>Nothing until there's something real to say. Then you get one email per release with the build, requirements, known limits and licence terms. No countdowns, no drip campaign.</p></details>
+            <details><summary>Does my work leave my machine?</summary><p>The desktop tools are local by default: Storyboard Studio runs on localhost, 3D Studio talks only to local loopback services, and LOCX Legal keeps its authority index and matter data on the machine. External image generation and remote model queries are opt-in and clearly labelled.</p></details>
+            <details><summary>Why isn't there a price yet?</summary><p>Because pricing comes after licence clearance and clean-machine verification, not before. We'd rather give you a real number once than a placeholder now.</p></details>
+            <details><summary>Can I talk to a human instead?</summary><p>Yes. Use the contact address below and tell us what you're trying to make. We read every message and answer the ones we can actually help with.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img class="brand-mark small" src="assets/images/locx-emblem.png" alt="">
+        <span><strong>LOCX INDUSTRIES</strong><small>Vibe Coded. Precision Built.</small></span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="releases.html">Releases</a><a href="addons.html">Blender Addons</a><a href="access.html">Early access</a><a href="about.html">About</a><a href="devlog.html">Devlog</a><a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-legal">© <span id="year">2026</span> LOCX Industries. All product names and statuses reflect the local release library at time of build.</p>
+    </div>
+  </footer>
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
