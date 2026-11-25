@@ -1,134 +1,135 @@
-<!DOCTYPE html>
-<html lang="en" data-type="software" data-radius="soft" data-buttons="solid">
+<!doctype html>
+<html lang="en" data-type="software">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LOCX Industries builds local-first software and Blender add-ons for storyboards, 3D assets and federal research.">
-  <meta name="theme-color" content="#101a2b">
-  <meta name="page-type" content="software">
-  <meta name="site-kind" content="software">
-  <title>LOCX Industries | Independent local-first creative software</title>
-  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent, local-first software and Blender add-ons by LK999 and AB696. Build 3D environments, plan films and find practical tools for your work.">
+  <meta name="theme-color" content="#f3f0e7">
+  <title>LOCX Industries — Independent software, made for real work</title>
   <link rel="canonical" href="https://locxgames.link/">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="LOCX Industries | Built on one workbench">
-  <meta property="og:description" content="LOCX Industries builds local-first software and Blender add-ons for storyboards, 3D assets and federal research.">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta property="og:title" content="LOCX Industries — From our workbench to yours">
+  <meta property="og:description" content="Practical software and Blender add-ons, made independently by two creators.">
+  <meta property="og:url" content="https://locxgames.link/">
+  <!-- Verify the image is publicly reachable and suitable for sharing before deployment. -->
+  <meta property="og:image" content="https://locxgames.link/assets/images/aislesmith-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* Standalone homepage stylesheet. No external scripts, fonts, or trackers. */
+    :root{--paper:#f3f6fa;--ink:#101a2b;--muted:#445a76;--rust:#2f6fed;--rust-dark:#1e4fba;--green:#3f587a;--line:#d5dfec;--light:#ffffff;--sage:#eaf0f8;--serif:Georgia,'Times New Roman',serif;--sans:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--width:1180px}
+    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}img{display:block;max-width:100%}a{color:var(--rust-dark);text-underline-offset:4px}button,input{font:inherit}button,a,input,summary{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #2f6fed;outline-offset:4px} [hidden]{display:none!important} h1,h2,h3,p,figure{margin:0}h1,h2,h3{line-height:1.12}h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-.04em}h1{font-size:clamp(3rem,6.2vw,5.6rem)}h2{font-size:clamp(2.1rem,4.2vw,3.55rem)}h3{font-size:1.28rem;font-weight:650;letter-spacing:-.025em}p+p{margin-top:.8rem}.shell{width:min(var(--width),calc(100% - 64px));margin-inline:auto}.skip{position:absolute;left:12px;top:-100px;padding:12px;background:var(--light);z-index:20}.skip:focus{top:12px}.eyebrow{font-size:.76rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--green);line-height:1.5}.small{font-size:.88rem;color:var(--muted)}.lede{font-size:clamp(1.05rem,1.5vw,1.22rem);color:var(--muted);max-width:61ch;line-height:1.6}.button{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:.78rem 1.18rem;min-height:48px;border:1px solid var(--rust);background:var(--rust);color:#fff;text-decoration:none;border-radius:4px;font-weight:650;font-size:.96rem;line-height:1.3;cursor:pointer;transition:background .15s,border-color .15s}.button:hover{background:var(--rust-dark);border-color:var(--rust-dark)}.button.secondary{background:transparent;border-color:#8fa3bd;color:var(--ink)}.button.secondary:hover{background:#eaf0f8;border-color:var(--ink)}.link{font-weight:650;text-decoration:underline;text-decoration-thickness:1px}.link:hover{color:var(--ink)}.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px}.section{padding-block:76px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}.section-head .lede{margin-top:12px}.section-head>a{flex-shrink:0}.rule{border-top:1px solid var(--line)}
+    .site-header{border-bottom:1px solid var(--line)}.header-inner{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;gap:11px;align-items:center;color:var(--ink);text-decoration:none;flex-shrink:0}.brand img{width:42px;height:42px;object-fit:contain}.brand-word{font-size:1.7rem;line-height:1;letter-spacing:-.06em;font-weight:850}.brand-word small{display:block;font-size:.59rem;letter-spacing:.21em;font-weight:700;margin-top:5px}.nav{display:flex;align-items:center;gap:clamp(12px,2vw,25px);flex-wrap:wrap}.nav>a:not(.button){font-size:.88rem;text-decoration:none;color:var(--ink);font-weight:550}.nav>a:not(.button):hover{text-decoration:underline}.nav .button{min-height:42px;padding:.6rem .9rem;font-size:.88rem}.menu-button{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:8px 14px;min-height:44px;border-radius:4px;cursor:pointer}
+    .hero{padding:72px 0 56px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(28px,5vw,76px)}.hero-copy{display:grid;gap:22px}.hero-copy h1 em{font-weight:400;color:var(--rust-dark)}.hero-note{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:1.03rem}.media{position:relative;display:grid;place-items:center;overflow:hidden;background:#e6edf5;isolation:isolate;border:1px solid #c3d0e0;border-radius:3px;aspect-ratio:4/3}.media>img{width:100%;height:100%;object-fit:contain;position:absolute;inset:0;background:#f3f6fa;z-index:1}.media .fallback{display:none;position:absolute;inset:0;padding:26px;align-content:center;justify-items:center;text-align:center;gap:8px;color:#33455f}.media .fallback strong{font:400 clamp(1.6rem,3.5vw,2.8rem)/1.1 var(--serif)}.media .fallback span{font-size:.8rem}.media.missing .fallback{display:grid}.media.missing img{visibility:hidden}.media-caption{display:flex;justify-content:space-between;gap:16px;font-size:.78rem;color:var(--muted);padding-top:10px}.hero-figure{margin:0}.hero-figure .media{aspect-ratio:5/4}.assurances{border-block:1px solid var(--line);background:#eef2f8}.assurances .shell{display:grid;grid-template-columns:repeat(3,1fr);padding-block:20px;gap:18px}.assurances p{font-size:.88rem;color:var(--muted);line-height:1.45}.assurances strong{display:block;font-size:.92rem;color:var(--ink);margin-bottom:3px}.assurances p+p{margin:0;padding-left:24px;border-left:1px solid #c9ccbf}
+    .feature{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(28px,5vw,68px);align-items:center}.feature .media{aspect-ratio:4/3}.feature-copy{display:grid;gap:15px}.feature-copy h2{font-size:clamp(2.6rem,4.8vw,4.2rem)}.feature-copy .hook{font:400 clamp(1.45rem,2.4vw,2rem)/1.22 var(--serif);color:var(--rust-dark);letter-spacing:-.025em}.specs{display:flex;flex-wrap:wrap;gap:8px 16px;list-style:none;padding:13px 0;margin:0;border-block:1px solid var(--line);color:var(--muted);font-size:.84rem}.specs li{display:flex;align-items:center;gap:7px}.specs li::before{content:'✓';color:var(--green);font-weight:800}.uses{font-size:.86rem;color:var(--muted)}
+    .catalog{background:var(--light);border-block:1px solid var(--line)}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 28px}.product{display:flex;flex-direction:column;align-items:flex-start;gap:12px;border-top:1px solid var(--line);padding:23px 0 27px;min-width:0}.product p{color:var(--muted);font-size:.96rem}.product .link{margin-top:auto;font-size:.9rem}.product .category{font-size:.74rem;color:var(--green);font-weight:700;letter-spacing:.06em;text-transform:uppercase}.catalog-foot{border-top:1px solid var(--line);padding-top:20px;font-size:.9rem;color:var(--muted)}.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.proof-item{border-top:2px solid var(--green);padding-top:18px;display:grid;gap:12px;align-content:start}.proof-item p{font-size:.96rem;color:var(--muted)}.proof-item .link{font-size:.92rem;justify-self:start}
+    .story{background:#e9eef6;border-block:1px solid var(--line)}.story-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,6vw,90px);align-items:start}.story-copy{display:grid;gap:18px}.story-copy p{max-width:61ch}.signature{font:italic 1.6rem/1.2 var(--serif);color:var(--rust-dark)}.founder-note{padding:8px 0 8px 26px;border-left:1px solid #b8c6d8}.founder{padding:17px 0;border-top:1px solid #d5dfec}.founder:last-child{border-bottom:1px solid #d5dfec}.founder p{margin-top:6px;font-size:.9rem;color:var(--muted)}.founder-name{font:400 1.7rem/1.2 var(--serif)}.journal{display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px}.journal p{margin-top:12px}.newsletter{background:var(--sage);border-top:1px solid #c3d0e0;padding:48px 0}.newsletter-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.newsletter-copy{display:grid;gap:13px}.newsletter h2{font-size:clamp(2rem,3.6vw,3rem)}.newsletter-form{display:grid;gap:10px}.newsletter-form label{font-size:.9rem;font-weight:600}.field-row{display:flex;gap:8px}.field-row input{min-width:0;flex:1;padding:12px;background:var(--light);border:1px solid #8fa3bd;border-radius:4px;color:var(--ink)}.consent{display:flex;align-items:flex-start;gap:8px}.consent input{width:18px;height:18px;flex:none;accent-color:var(--green)}.newsletter-fallback{display:grid;gap:12px;justify-items:start}.footer{background:var(--ink);color:#ffffff;padding:40px 0 24px}.footer-main{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:26px;padding-bottom:32px}.footer .brand{color:#ffffff}.footer p,.footer small{color:#b7c7dc;font-size:.86rem}.footer a{color:#ffffff}.footer .footer-links{display:grid;gap:7px;align-content:start}.footer-links strong{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:#b7c7dc}.footer-links a{font-size:.9rem;text-decoration:none}.footer-links a:hover{text-decoration:underline}.footer-bottom{display:flex;justify-content:space-between;gap:14px;padding-top:20px;border-top:1px solid #53564e;flex-wrap:wrap}
+    @media(max-width:950px){.header-inner{flex-wrap:wrap;padding-block:16px;gap:14px}.nav{gap:14px}.hero{padding-top:50px}.hero-grid{gap:32px}.shell{width:calc(100% - 48px)}.section{padding-block:58px}}
+    @media(max-width:760px){.shell{width:calc(100% - 36px)}.header-inner{min-height:70px}.js .menu-button{display:block}.nav{width:100%;padding:8px 0 4px;display:flex;flex-direction:column;align-items:stretch;gap:0}.nav>a:not(.button){padding:12px 0;border-top:1px solid var(--line);font-size:1rem}.nav .button{align-self:flex-start;margin-top:8px}.js .nav:not(.open){display:none}.hero{padding:43px 0 32px}.hero-grid,.feature,.story-grid,.newsletter-grid{grid-template-columns:1fr;gap:28px}.hero-copy{gap:17px}.hero-figure .media{aspect-ratio:4/3}.assurances .shell{grid-template-columns:1fr;gap:10px;padding-block:16px}.assurances p{display:block}.assurances p+p{padding:10px 0 0;border-left:0;border-top:1px solid #c9ccbf}.section{padding-block:42px}.section-head{align-items:start;flex-direction:column;gap:12px;margin-bottom:22px}.feature-copy{order:-1}.product-grid{grid-template-columns:repeat(2,1fr);gap:0 20px}.proof-grid{grid-template-columns:1fr;gap:24px}.founder-note{padding:0;border-left:0}.journal{grid-template-columns:1fr;gap:18px;justify-items:start}.newsletter{padding:36px 0}.footer-main{grid-template-columns:1fr 1fr}.footer-main>div:first-child{grid-column:1/-1}}
+    @media(max-width:440px){body{font-size:16px}.product-grid{grid-template-columns:1fr}.field-row{flex-direction:column}.hero .actions{align-items:flex-start;flex-direction:column}.hero .actions .button{width:100%}.media-caption{font-size:.72rem}.footer-main{gap:20px}.feature-copy .actions .button{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+    @keyframes li-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    .hero .hero-copy>*{animation:li-in .75s cubic-bezier(.2,.7,.2,1) both}
+    .hero .hero-copy>*:nth-child(2){animation-delay:.08s}
+    .hero .hero-copy>*:nth-child(3){animation-delay:.16s}
+    .hero .hero-copy>*:nth-child(4){animation-delay:.24s}
+    .hero-figure .media{animation:li-in .9s cubic-bezier(.2,.7,.2,1) .18s both}
+    ::selection{background:#cfe0ff;color:#101a2b}
+    input,textarea{caret-color:var(--rust)}
+    ::-webkit-scrollbar{width:10px;height:10px}
+    ::-webkit-scrollbar-track{background:var(--paper)}
+    ::-webkit-scrollbar-thumb{background:#9aabc0;border-radius:8px;border:2px solid var(--paper)}
+    .product-grid{grid-template-columns:repeat(2,1fr);gap:0 32px}
+    .product{border-top:0;padding:18px 0;border-bottom:1px solid var(--line);gap:7px}
+    .product h3{font-family:var(--serif);font-size:1.45rem;font-weight:400;letter-spacing:-.03em}
+    .product .link{margin-top:4px;font-size:.9rem}
+    @media(max-width:760px){.product-grid{grid-template-columns:1fr}}
+  </style>
 </head>
-<!-- LI-CANARY-20261124-7F3A -->
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header" id="siteHeader">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
     <div class="shell header-inner">
-      <a class="brand" href="index.html">
-        <img class="brand-mark" src="assets/images/locx-emblem.png" alt="">
-        <span class="brand-text"><strong>LOCX</strong><span>INDUSTRIES</span></span>
+      <a class="brand" href="index.html" >
+        <img src="assets/images/locx-emblem.png" width="42" height="42" alt="" data-optional-image>
+        <span class="brand-word">LOCX<small>INDUSTRIES</small></span>
       </a>
-
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
-        <a href="releases.html">Products</a>
-        <a href="addons.html">Blender Addons</a>
-        <a href="about.html">About</a>
-        <a href="devlog.html">Devlog</a>
-        <a href="support.html">Support</a>
-        <a class="nav-cta" href="contact.html">Contact studio</a>
+      <button type="button" class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="releases.html">Products</a><a href="addons.html">Blender Add-ons</a><a href="about.html">About</a><a href="devlog.html">Devlog</a><a href="support.html">Support</a><a class="button" href="releases.html" data-event="browse_products">View products <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
   <main id="main">
-    <section class="hero" data-enter aria-labelledby="heroTitle">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="shell hero-inner">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
         <div class="hero-copy">
-          <h1 id="heroTitle">Create more.<br><span>Keep control.</span></h1>
-          <p class="hero-lede">Practical software for artists, filmmakers and developers. Built by independent creators who use the tools themselves.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="releases.html">Explore our products</a>
-            <a class="button button-ghost" href="about.html">Meet the creators</a>
-          </div>
-          <div class="hero-meta">
-            <span>Local by default</span><span class="dot" aria-hidden="true"></span>
-            <span>Optional external providers</span><span class="dot" aria-hidden="true"></span>
-            <span>Independent studio</span>
-          </div>
-          <p class="hero-aside">We are LK999 and AB696. We build the tools we wanted, then check them before we call them done.</p>
+          <p class="eyebrow">Independent software · Made by two creators</p>
+          <h1 id="hero-title">Good tools make room for <em>better ideas.</em></h1>
+          <p class="lede">We make practical software for people who love making things. Build worlds in Blender, plan your next film and spend less time fighting your workflow.</p>
+          <div class="actions"><a class="button" href="releases.html" data-event="hero_products">Find your next tool <span aria-hidden="true">→</span></a><a class="link" href="about.html">Meet the makers</a></div>
+          <p class="hero-note">From our workbench to yours. — LK &amp; AB</p>
         </div>
-
-        <div class="hero-visual" aria-label="LOCX product screenshots">
-          <div class="hero-shot hero-shot-main">
-            <img src="assets/images/locx-3d-studio.jpg" alt="LOCX 3D Studio workspace">
-          </div>
-          <div class="hero-shot hero-shot-sub">
-            <img src="assets/images/aislesmith-hero.jpg" alt="AisleSmith industrial scene built in Blender">
-          </div>
-        </div>
+        <figure class="hero-figure">
+          <div class="media"><img src="assets/images/locx-3d-studio.jpg" alt="LOCX 3D Studio workspace" width="1200" height="960" fetchpriority="high" decoding="async" data-product-image><div class="fallback" aria-hidden="true"><strong>LOCX 3D Studio</strong><span>Product image unavailable</span></div></div>
+        </figure>
       </div>
     </section>
-
-    <section class="stats" aria-label="Studio at a glance">
-      <div class="shell stats-inner">
-        <div class="stat"><strong>100%</strong><span>Local by default</span></div>
-        <div class="stat"><strong>12/12</strong><span>3D Studio checks passed</span></div>
-        <div class="stat"><strong>09</strong><span>AisleSmith fixture families</span></div>
-        <div class="stat"><strong>01</strong><span>Independent studio</span></div>
-      </div>
-    </section>
-
-    <section class="workbench-note" aria-label="A note from the studio">
-      <div class="shell note-paper">
-        <span class="note-pin" aria-hidden="true"></span>
-        <div class="note-copy">
-          <p class="hand-label">Note</p>
-          <h2>Why we made these</h2>
-          <p>We needed a storyboard that stays on one machine, a 3D workshop that doesn't upload references, and a way to search federal law without sending a matter to a server. So we built them.</p>
-          <p class="note-sign">If one sounds useful, the page below has the details. <span class="hand-sign">LK and AB</span></p>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="feature-product" aria-labelledby="featureTitle">
-      <div class="shell feature-product-inner">
-        <div class="feature-shot"><img src="assets/images/aislesmith-hero.jpg" alt="AisleSmith industrial scene built in Blender"></div>
+    <aside class="assurances" aria-label="How we build"><div class="shell">
+      <p><strong>Local-first by design.</strong>See each tool's requirements and external connections.</p>
+      <p><strong>Made independently.</strong>Built around problems we've encountered ourselves.</p>
+      <p><strong>Reach the studio.</strong><a href="contact.html">Ask us</a> about the tools, licensing or support.</p>
+    </div></aside>
+    <section class="section" id="aislesmith" aria-labelledby="feature-title">
+      <div class="shell feature">
+        <figure><div class="media"><img src="assets/images/aislesmith-hero.jpg" alt="AisleSmith industrial scene built in Blender" width="1200" height="900" loading="lazy" decoding="async" data-product-image><div class="fallback" aria-hidden="true"><strong>AisleSmith</strong><span>Product image unavailable</span></div></div></figure>
         <div class="feature-copy">
-          <span class="build-label">BLENDER ADD-ON</span>
-          <h2 id="featureTitle">AisleSmith</h2>
-          <p class="row-lede">Stop modeling shelves. Start building worlds.</p>
-          <p>Nine fixture generators for warehouse, workshop and retail scenes. Set dimensions, spacing and palettes, then keep the editable meshes in your Blender workflow.</p>
-          <p class="feature-prereq">Blender 4.2+ · Editable meshes · No account required</p>
-          <a class="button button-primary" href="addons.html">Explore AisleSmith</a>
+          <p class="eyebrow">Featured from the workbench · Blender add-on</p>
+          <h2 id="feature-title">AisleSmith</h2>
+          <p class="hook">Stop modeling shelves. Start building worlds.</p>
+          <p>Build warehouses, workshops and retail scenes without starting every fixture from scratch. Nine generators let you adjust dimensions, spacing and palettes, then keep working with editable meshes.</p>
+          <ul class="specs"><li>Blender 4.2+</li><li>Editable meshes</li><li>No account required</li></ul>
+          <div class="actions"><a class="button" href="addons.html" data-event="aislesmith_details">Explore AisleSmith <span aria-hidden="true">→</span></a><a class="link" href="contact.html">Ask about the add-on</a></div>
+          <p class="uses">For 3D artists, environment designers and anyone building a space full of fixtures.</p>
+          <!-- SALES: Once verified, replace addons.html with the dedicated AisleSmith page, show actual price, license and purchase link, and add a genuine demo. Do not invent these. -->
         </div>
       </div>
     </section>
-
-    <section class="founders" aria-labelledby="foundersTitle">
+    <section class="section catalog" id="products" aria-labelledby="products-title">
       <div class="shell">
-        <h2 id="foundersTitle">Two creators. One workbench.</h2>
-        <div class="founders-grid">
-          <div class="founder"><span class="founder-initial">LK</span><h3>LK999</h3><p>Co-founder. Builds the tools that solve the problems we hit first.</p></div>
-          <div class="founder"><span class="founder-initial">AB</span><h3>AB696</h3><p>Co-founder. Focuses on the workflows and the details people actually touch.</p></div>
+        <div class="section-head"><div><p class="eyebrow">The tools</p><h2 id="products-title">Find something for your work.</h2><p class="lede">Different projects need different tools. Start with what you're trying to make.</p></div><a class="link" href="releases.html">All software <span aria-hidden="true">→</span></a></div>
+        <div class="product-grid">
+          <article class="product"><span class="category">3D environments · Blender</span><h3>AisleSmith</h3><p>Generate customizable fixtures for warehouse, workshop and retail scenes.</p><a class="link" href="#aislesmith">See AisleSmith <span aria-hidden="true">→</span></a></article>
+          <article class="product"><span class="category">Film &amp; storytelling</span><h3>Storyboard Studio</h3><p>Plan your next story with a storyboard workflow that stays on your machine.</p><a class="link" href="releases.html">Find Storyboard Studio <span aria-hidden="true">→</span></a></article>
+          <article class="product"><span class="category">3D creative work</span><h3>LOCX 3D Studio</h3><p>A local-first 3D workshop designed around keeping your references under your control.</p><a class="link" href="releases.html">Find 3D Studio <span aria-hidden="true">→</span></a></article>
+          <article class="product"><span class="category">Research</span><h3>LOCX Legal</h3><p>Explore federal legal research on your own machine.</p><a class="link" href="locx-legal.html">See LOCX Legal <span aria-hidden="true">→</span></a></article>
+          <article class="product"><span class="category">Learning · Games</span><h3>CodeQuest</h3><p>Learn coding by playing.</p><a class="link" href="code-quest.html">See CodeQuest <span aria-hidden="true">→</span></a></article>
+          <article class="product"><span class="category">More from LOCX</span><h3>FreeChat &amp; Cosmic</h3><p>For details and availability, check our software catalog or get in touch.</p><a class="link" href="releases.html">Browse software <span aria-hidden="true">→</span></a></article>
         </div>
-        <p class="founders-story">Most of our projects start the same way: we are making something, hit a frustrating problem, and end up building a tool for it. LOCX is what happens when we think other creators might need that tool too. We would rather show you what the software does than promise what it might do someday.</p>
-        <p class="founders-sign">LK and AB</p>
-        <a class="text-link" href="about.html">Meet the studio</a>
+        <p class="catalog-foot">Not sure which tool fits? <a href="contact.html">Tell us what you're working on.</a> For release information and licensing, visit the product pages or <a href="support.html">support</a>.</p>
       </div>
     </section>
-
-    <section class="newsletter" aria-labelledby="newsTitle">
-      <div class="shell newsletter-inner">
-        <div>
-          <h2 id="newsTitle">Workbench Notes</h2>
-          <p>Occasional release news, real demos and a short note from us. Pick the products you care about.</p>
-        </div>
-        <form class="newsletter-form" id="newsForm">
-          <label for="newsEmail">Email address</label>
-          <input type="email" id="newsEmail" name="email" required autocomplete="email" placeholder="you@example.com">
-          <fieldset class="interest-set">
-            <legend>What do you care about?</legend>
+    <section class="section" aria-labelledby="proof-title"><div class="shell">
+      <div class="section-head"><div><p class="eyebrow">Before you decide</p><h2 id="proof-title">See the work behind the tools.</h2><p class="lede">Get to know what the software does, how it's developing and where to ask questions before you commit.</p></div></div>
+      <div class="proof-grid">
+        <article class="proof-item"><h3>Look at the products.</h3><p>Start with the features and requirements for the tool that interests you.</p><a class="link" href="releases.html">Product information →</a></article>
+        <article class="proof-item"><h3>Follow the development.</h3><p>Read notes from the workbench and see what the studio has been working on.</p><a class="link" href="devlog.html">Read the devlog →</a></article>
+        <article class="proof-item"><h3>Know what you're getting.</h3><p>Check licensing and privacy information, or ask us directly if something isn't clear.</p><a class="link" href="support.html#licensing">Licensing &amp; support →</a></article>
+      </div>
+    </div></section>
+    <section class="section story" id="our-story" aria-labelledby="story-title"><div class="shell story-grid">
+      <div class="story-copy"><p class="eyebrow">A note from the studio</p><h2 id="story-title">Two creators.<br>One workbench.</h2><p>Most of our projects start the same way: we're making something, hit a frustrating problem, and end up building a tool for it.</p><p>We needed a storyboard that stays on one machine, a 3D workshop that keeps our references local, and a way to research federal law locally. So we built them. LOCX is where we share the tools we think other people might find useful, too.</p><p>We'd rather show you what the software does than promise what it might do someday.</p><p class="signature">— LK &amp; AB</p><div><a class="link" href="about.html">More about our studio →</a></div></div>
+      <aside class="founder-note" aria-label="The founders"><p class="eyebrow">The people behind LOCX</p><div class="founder"><h3 class="founder-name">LK999</h3><p>Co-founder · Builds tools to solve the problems we run into first.</p></div><div class="founder"><h3 class="founder-name">AB696</h3><p>Co-founder · Focuses on workflows and the details people actually touch.</p></div><p class="small" style="margin-top:16px">Questions or ideas? <a href="contact.html">Write to the studio.</a></p></aside>
+    </div></section>
+    <section class="section" aria-labelledby="journal-title"><div class="shell journal"><div><p class="eyebrow">The workbench</p><h2 id="journal-title">Still making things.</h2><p class="lede">Read our development notes, keep up with the tools and see what we're working on.</p></div><a class="button secondary" href="devlog.html">Read the devlog <span aria-hidden="true">→</span></a></div></section>
+    <section class="newsletter" aria-labelledby="newsletter-title"><div class="shell newsletter-grid">
+      <div class="newsletter-copy"><p class="eyebrow">A letter from the workbench</p><h2 id="newsletter-title">Workbench Notes.</h2><p>Occasional release news, demos and stories about what we're making.</p></div>
+      <div>
+        <!-- NEWSLETTER: Set data-endpoint to the real HTTPS or same-origin POST endpoint. The service must handle consent, validation, abuse protection, confirmation, and unsubscribe. Form stays hidden until explicitly configured. -->
+        <form class="newsletter-form" id="newsletterForm" method="post">
+          <label for="newsletterEmail">Email address</label><div class="field-row"><input type="email" id="newsletterEmail" name="email" placeholder="you@example.com" autocomplete="email" required><button class="button" type="submit">Keep me posted</button></div>
+          <fieldset class="interest-set"><legend>What do you care about?</legend>
             <label><input type="checkbox" name="interest" value="AisleSmith"> AisleSmith</label>
             <label><input type="checkbox" name="interest" value="Storyboard Studio"> Storyboard Studio</label>
             <label><input type="checkbox" name="interest" value="3D Studio"> 3D Studio</label>
@@ -136,47 +137,42 @@
             <label><input type="checkbox" name="interest" value="Cosmic"> Cosmic</label>
             <label><input type="checkbox" name="interest" value="CodeQuest"> CodeQuest</label>
           </fieldset>
-          <label class="consent-line"><input type="checkbox" id="newsConsent" name="consent" required> Send me LOCX product updates. Unsubscribe any time.</label>
-          <button class="button button-primary" type="submit">Join us</button>
-          <p class="news-fine">Product-specific updates. No unrelated messages.</p>
+          <label class="consent"><input type="checkbox" name="consent" id="newsConsent" value="yes" required><span>Send me LOCX product updates. I can unsubscribe at any time.</span></label><p class="small"><a href="support.html#privacy">Privacy information</a></p>
         </form>
+        <div class="newsletter-fallback" id="newsletterFallback"><p>Want to hear from us? Ask the studio about product updates, or follow the devlog.</p><div class="actions"><a class="button" href="contact.html">Contact the studio</a><a class="link" href="devlog.html">Read the notes</a></div></div>
       </div>
-    </section>
-
-    <section class="section home-hub" aria-labelledby="hubTitle">
-      <div class="shell">
-        <div class="section-head reveal">
-          <div>
-            <h2 id="hubTitle">The studio</h2>
-          </div>
-        </div>
-        <div class="hub-grid">
-          <a class="hub-card reveal" href="releases.html"><span>01</span><h3>Products</h3><p>Local software for creative work.</p><b>View products</b></a>
-          <a class="hub-card reveal" href="addons.html"><span>02</span><h3>Blender Addons</h3><p>AisleSmith, plus a few other things on the bench.</p><b>View add-ons</b></a>
-          <a class="hub-card reveal" href="about.html"><span>03</span><h3>About</h3><p>LK999 and AB696. Why we build this way.</p><b>Meet the studio</b></a>
-          <a class="hub-card reveal" href="devlog.html"><span>04</span><h3>Devlog</h3><p>Short notes on the tools.</p><b>Read notes</b></a>
-          <a class="hub-card reveal" href="locx-legal.html"><span>05</span><h3>LOCX Legal</h3><p>Federal research on your own machine.</p><b>View details</b></a>
-          <a class="hub-card reveal" href="contact.html"><span>06</span><h3>Contact</h3><p>Questions, licensing, or just saying hello.</p><b>Get in touch</b></a>
-          <a class="hub-card reveal" href="code-quest.html"><span>07</span><h3>CodeQuest</h3><p>Learn coding by playing.</p><b>See the game</b></a>
-        </div>
-      </div>
-    </section>
-
+    </div></section>
   </main>
-  <footer class="site-footer">
-    <div class="shell footer-inner">
-      <div class="footer-brand">
-        <img class="brand-mark small" src="assets/images/locx-emblem.png" alt="">
-        <span><strong>LOCX INDUSTRIES</strong><small>Vibe Coded. Precision Built.</small></span>
-      </div>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="releases.html">Products</a><a href="addons.html">Blender Addons</a><a href="about.html">About</a><a href="devlog.html">Devlog</a><a href="support.html">Support</a><a href="support.html#privacy">Privacy</a><a href="support.html#licensing">Licensing</a><a href="contact.html">Contact</a>
-      </nav>
-      <p class="footer-legal">© <span id="year">2026</span> LOCX Industries. Founded by LK999 &amp; AB696.</p>
-    </div>
-  </footer>
-  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="assets/js/main.js"></script>
+  <footer class="footer"><div class="shell">
+    <div class="footer-main"><div><a class="brand" href="index.html"><span class="brand-word">LOCX<small>INDUSTRIES</small></span></a><p style="margin-top:14px">From our workbench to yours.</p><p>Independent software by LK999 &amp; AB696.</p></div><nav class="footer-links" aria-label="Product links"><strong>Explore</strong><a href="releases.html">Products</a><a href="addons.html">Blender Add-ons</a><a href="about.html">About</a><a href="devlog.html">Devlog</a></nav><nav class="footer-links" aria-label="Help and policies"><strong>We're here to help</strong><a href="support.html">Support</a><a href="support.html#licensing">Licensing</a><a href="support.html#privacy">Privacy</a><a href="contact.html">Contact</a></nav></div>
+    <div class="footer-bottom"><small>© <span id="year">2026</span> LOCX Industries.</small><a href="#top">Back to top ↑</a></div>
+  </div></footer>
+  <script>
+    (() => {
+      'use strict';
+      document.documentElement.classList.add('js');
+      const menu = document.getElementById('menuButton'), nav = document.getElementById('mainNav');
+      function setMenu(open) { nav.classList.toggle('open',open); menu.setAttribute('aria-expanded',String(open)); menu.textContent=open?'Close menu':'Menu'; }
+      menu.addEventListener('click',()=>setMenu(menu.getAttribute('aria-expanded')!=='true'));
+      nav.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false);});
+      document.addEventListener('keydown',e=>{if(e.key==='Escape' && menu.getAttribute('aria-expanded')==='true'){setMenu(false);menu.focus();}});
+      document.querySelectorAll('img[data-product-image],img[data-optional-image]').forEach(img=>{
+        const missing=()=>{if(img.hasAttribute('data-optional-image'))img.hidden=true;else {img.closest('.media').classList.add('missing');img.closest('.media').querySelector('.fallback').removeAttribute('aria-hidden');}};
+        img.addEventListener('error',missing,{once:true});if(img.complete && !img.naturalWidth)missing();
+      });
+      const form=document.getElementById('newsletterForm');
+      form.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        const email=document.getElementById('newsletterEmail');
+        if(!email.checkValidity()){email.reportValidity();return;}
+        const interests=[...form.querySelectorAll('input[name=interest]:checked')].map(x=>x.value).join(', ')||'general';
+        const subject=encodeURIComponent('Workbench Notes signup');
+        const body=encodeURIComponent('Please add '+email.value.trim()+' to Workbench Notes.\nInterests: '+interests);
+        location.href='mailto:hello@locxindustries.com?subject='+subject+'&body='+body;
+      });
+      document.getElementById('year').textContent=String(new Date().getFullYear());
+      // data-event attributes are integration hooks only. No analytics or tracking is sent by this file.
+    })();
+  </script>
 </body>
 </html>
