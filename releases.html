@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Local software from LOCX Industries for creative work and research.">
+  <meta name="description" content="Software and games from LOCX Industries.">
   <meta name="theme-color" content="#101a2b">
   <meta name="page-type" content="software">
   <meta name="site-kind" content="software">
-  <title>Products | LOCX Industries</title>
+  <title>What we make | LOCX Industries</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -38,101 +38,74 @@
       </div>
     </section>
 
-    <section class="product-row" aria-labelledby="sbTitle">
-      <div class="shell product-row-inner">
-        <div class="product-row-visual">
-          <img src="assets/images/locx-storyboard-studio.jpg" alt="LOCX Storyboard Studio showing a scene and its shot board">
+    <section class="catalogue" aria-label="Product catalogue">
+      <div class="shell">
+        <div class="catalogue-bar" role="group" aria-label="Filter products">
+          <button class="filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="software" aria-pressed="false">Software</button>
+          <button class="filter" type="button" data-filter="game" aria-pressed="false">Games</button>
         </div>
-        <div class="product-row-copy">
-          <span class="build-label">BUILD 1.1.0</span>
-          <h2 id="sbTitle">LOCX Storyboard Studio</h2>
-          <p class="row-lede">A storyboard editor that stays on your machine.</p>
-          <p>Plan scenes and shots, keep character and location references in one place, and arrange ideas on a freeform mixboard. Image providers are optional. The app tells you when none is configured.</p>
-          <ul class="plain-list">
-            <li>Scene and shot editor with JSON export</li>
-            <li>Reference library with image uploads</li>
-            <li>Mixboard with undo, zoom and PNG export</li>
-            <li>MCP adapter for agents</li>
-          </ul>
-          <a class="text-link" href="storyboard-studio.html">View details</a>
-        </div>
-      </div>
-    </section>
 
-    <section class="product-row reverse" aria-labelledby="studioTitle">
-      <div class="shell product-row-inner">
-        <div class="product-row-visual">
-          <img src="assets/images/locx-3d-studio.jpg" alt="LOCX 3D Studio modular workspace with object and inspector panels">
-        </div>
-        <div class="product-row-copy">
-          <span class="build-label">BUILD 1.0.0</span>
-          <h2 id="studioTitle">LOCX 3D Studio</h2>
-          <p class="row-lede">A 3D workshop that runs offline.</p>
-          <p>Turn a reference image into geometry, retexture a mesh, clean up topology and export a GLB. Model packs install separately, and the app reports when an engine is missing.</p>
-          <ul class="plain-list">
-            <li>Image to geometry and PBR retexturing</li>
-            <li>Blender based mesh clean-up</li>
-            <li>Setup CLI for local model packs</li>
-            <li>GLB export and Unreal handoff helpers</li>
-          </ul>
-          <a class="text-link" href="3d-studio.html">View details</a>
-        </div>
-      </div>
-    </section>
+        <div class="catalogue-grid" id="catalogueGrid">
+          <article class="catalogue-item" data-category="software">
+            <a href="storyboard-studio.html">
+              <div class="catalogue-shot"><img src="assets/images/locx-storyboard-studio.jpg" alt="LOCX Storyboard Studio shot board"></div>
+              <div class="catalogue-copy">
+                <span class="build-label">BUILD 1.1.0</span>
+                <h2>LOCX Storyboard Studio</h2>
+                <p>A storyboard editor that stays on your machine. Scenes, shots, references and a freeform mixboard.</p>
+                <span class="item-link">View details</span>
+              </div>
+            </a>
+          </article>
 
-    <section class="product-row" aria-labelledby="legalTitle">
-      <div class="shell product-row-inner">
-        <div class="product-row-visual">
-          <img src="assets/images/legal-01-overview.png" alt="LOCX Legal overview with a matter caption and indexed authorities">
-        </div>
-        <div class="product-row-copy">
-          <span class="build-label">BUILD 0.1.0</span>
-          <h2 id="legalTitle">LOCX Legal</h2>
-          <p class="row-lede">Federal research on your own machine.</p>
-          <p>A matter workspace with 49,092 federal sections indexed locally. Search results carry citations and source links. Remote model queries need consent.</p>
-          <ul class="plain-list">
-            <li>Matter records with evidence and timeline</li>
-            <li>Federal statute search across 49,092 sections</li>
-            <li>Source-backed memorandum answers</li>
-            <li>Local and remote model controls</li>
-          </ul>
-          <p class="legal-note">Legal research is not legal representation. Verify authorities, jurisdiction and deadlines with a qualified lawyer.</p>
-          <a class="text-link" href="locx-legal.html">View details</a>
-        </div>
-      </div>
-    </section>
+          <article class="catalogue-item" data-category="software">
+            <a href="3d-studio.html">
+              <div class="catalogue-shot"><img src="assets/images/locx-3d-studio.jpg" alt="LOCX 3D Studio workspace"></div>
+              <div class="catalogue-copy">
+                <span class="build-label">BUILD 1.0.0</span>
+                <h2>LOCX 3D Studio</h2>
+                <p>An offline 3D workshop. Image to geometry, texturing, mesh clean-up and GLB export.</p>
+                <span class="item-link">View details</span>
+              </div>
+            </a>
+          </article>
 
-    <section class="product-row reverse" aria-labelledby="questTitle">
-      <div class="shell product-row-inner">
-        <div class="product-row-visual">
-          <img src="assets/images/code-quest-keyart.jpg" alt="CodeQuest key art with a moonlit castle">
-        </div>
-        <div class="product-row-copy">
-          <span class="build-label">GAME</span>
-          <h2 id="questTitle">CodeQuest</h2>
-          <p class="row-lede">Learn coding by playing.</p>
-          <p>A game that teaches C++ by putting you in a world that responds to the code you write. Quests start small and get harder. When something breaks, the game shows you where it went wrong.</p>
-          <a class="text-link" href="code-quest.html">View details</a>
-        </div>
-      </div>
-    </section>
-    <section class="product-row" aria-labelledby="cosmicTitle">
-      <div class="shell product-row-inner">
-        <div class="product-row-visual">
-          <img src="assets/images/locx-cosmic.jpg" alt="LOCX Cosmic single coder workspace with project overview and activity stream">
-        </div>
-        <div class="product-row-copy">
-          <span class="build-label">BUILD 0.1.0</span>
-          <h2 id="cosmicTitle">LOCX Cosmic</h2>
-          <p class="row-lede">A workspace for coding agents.</p>
-          <p>Single Coder and Team Coder run against your own Codex or Antigravity subscription. You can also point Cosmic at an OpenAI-compatible endpoint with your own key. Keys stay in local app data.</p>
-          <ul class="plain-list">
-            <li>Agent workspaces with persistent memory</li>
-            <li>Skill library and MCP connections</li>
-            <li>Activity stream with agent steps and errors</li>
-            <li>Windows x64 with portable and installer builds</li>
-          </ul>
-          <a class="text-link" href="locx-cosmic.html">View details</a>
+          <article class="catalogue-item" data-category="software">
+            <a href="locx-legal.html">
+              <div class="catalogue-shot"><img src="assets/images/legal-01-overview.png" alt="LOCX Legal matter overview"></div>
+              <div class="catalogue-copy">
+                <span class="build-label">BUILD 0.1.0</span>
+                <h2>LOCX Legal</h2>
+                <p>Federal research on your own machine. A matter workspace with 49,092 indexed sections.</p>
+                <span class="item-link">View details</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="catalogue-item" data-category="game">
+            <a href="code-quest.html">
+              <div class="catalogue-shot"><img src="assets/images/code-quest-keyart.jpg" alt="CodeQuest key art"></div>
+              <div class="catalogue-copy">
+                <span class="build-label">GAME</span>
+                <h2>CodeQuest</h2>
+                <p>The game where you learn coding by playing. Write real C++ and watch the world respond.</p>
+                <span class="item-link">View details</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="catalogue-item" data-category="software">
+            <a href="locx-cosmic.html">
+              <div class="catalogue-shot"><img src="assets/images/locx-cosmic.jpg" alt="LOCX Cosmic workspace"></div>
+              <div class="catalogue-copy">
+                <span class="build-label">BUILD 0.1.0</span>
+                <h2>LOCX Cosmic</h2>
+                <p>A workspace for coding agents with your own providers, local keys and persistent memory.</p>
+                <span class="item-link">View details</span>
+              </div>
+            </a>
+          </article>
         </div>
       </div>
     </section>
@@ -153,5 +126,22 @@
   <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('.filter');
+      var items = document.querySelectorAll('.catalogue-item');
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          buttons.forEach(function (x) { x.classList.remove('active'); x.setAttribute('aria-pressed', 'false'); });
+          b.classList.add('active');
+          b.setAttribute('aria-pressed', 'true');
+          var f = b.getAttribute('data-filter');
+          items.forEach(function (item) {
+            item.hidden = (f !== 'all' && item.getAttribute('data-category') !== f);
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
