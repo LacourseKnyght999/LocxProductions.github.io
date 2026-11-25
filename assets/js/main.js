@@ -182,12 +182,19 @@
     newsForm.addEventListener('submit', function (e) {
       e.preventDefault();
       var email = document.getElementById('newsEmail');
+      var consent = document.getElementById('newsConsent');
       if (!email || !email.checkValidity()) {
         if (email) email.reportValidity();
         return;
       }
+      if (consent && !consent.checked) {
+        showToast('Please confirm you want product updates');
+        return;
+      }
+      var interests = Array.prototype.slice.call(newsForm.querySelectorAll('input[name="interest"]:checked'))
+        .map(function (x) { return x.value; });
       var subject = encodeURIComponent('Workbench Notes signup');
-      var body = encodeURIComponent('Please add ' + email.value.trim() + ' to Workbench Notes.');
+      var body = encodeURIComponent('Please add ' + email.value.trim() + ' to Workbench Notes.\nInterests: ' + (interests.join(', ') || 'general'));
       window.location.href = 'mailto:hello@locxindustries.com?subject=' + subject + '&body=' + body;
       showToast('Your email app will open to finish signup');
       newsForm.reset();

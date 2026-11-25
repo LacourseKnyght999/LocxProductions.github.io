@@ -537,6 +537,11 @@ img.brand-mark, img.brand-mark.small { object-fit: contain; }
 .newsletter h2 { font-size: clamp(32px, 4vw, 48px); margin-bottom: 14px; }
 .newsletter p { color: #b7c7dc; font-size: 16px; line-height: 1.7; max-width: 520px; }
 .newsletter-form label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+.interest-set { border: 0; padding: 0; margin: 4px 0 16px; }
+.interest-set legend { font-size: 12px; font-weight: 700; color: #c2d0e2; margin-bottom: 10px; }
+.interest-set label, .consent-line { display: inline-flex !important; align-items: center; gap: 7px; margin: 0 14px 8px 0 !important; font-weight: 500 !important; color: #c2d0e2 !important; }
+.interest-set input, .consent-line input { accent-color: var(--blue); }
+.consent-line { display: flex !important; margin: 12px 0 18px !important; }
 .newsletter-form input { width: 100%; min-height: 48px; padding: 0 14px; border: 1px solid rgba(151,170,196,.45); border-radius: 6px; background: rgba(255,255,255,.06); color: #fff; font-family: var(--font-body); font-size: 15px; margin-bottom: 12px; }
 .newsletter-form input::placeholder { color: #8ea6c4; }
 .newsletter-form .button { width: 100%; }

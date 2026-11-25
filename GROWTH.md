@@ -102,7 +102,21 @@ Priority note: the audit ranks AisleSmith first and Storyboard Studio second as 
 
 Paid launch sequence: FreeChat first because it is approved; AisleSmith first for carousel-style launch content once verified; Storyboard Studio and 3D Studio after their release records are consistent and demos exist.
 
-## 8. Guardrails
+## 8. Sales funnel playbook integration
+
+Applied the implementation playbook's safe, low-cost items:
+
+- Newsletter now collects product interests with explicit unchecked consent. The mailto fallback lists the chosen interests until a real email provider is connected.
+- AisleSmith, Storyboard Studio, 3D Studio, FreeChat, Cosmic and CodeQuest each have dedicated product interest options.
+- Fixed the 3D Studio version conflict. The public record is now BUILD 1.0.0 everywhere.
+- Added canonical URLs and Open Graph title, description and image to every page, plus /support in the sitemap.
+- Added Support, Privacy, Licensing and commercial terms destinations. Support now carries factual download-verification, privacy, licensing and terms sections; no invented legal policy.
+- Analytics event dictionary and weekly dashboard are defined in the playbook. Cloudflare Web Analytics is the first implementation step; no paid analytics yet.
+- Product state still comes from the release library. Checkout stays closed until a product clears its gates and a payment provider is approved. FreeChat is the only approved product today.
+
+Not built yet by design: custom checkout, accounts, subscriptions, CRM, automated email sequences, paid ads before a measured baseline, fake reviews, countdowns or purchase alerts.
+
+## 9. Guardrails
 
 - Only approved products get purchase language or paid ads.
 - No invented reviews, customers, usage numbers or "best" claims.

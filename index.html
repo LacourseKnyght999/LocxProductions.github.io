@@ -7,8 +7,12 @@
   <meta name="theme-color" content="#101a2b">
   <meta name="page-type" content="software">
   <meta name="site-kind" content="software">
-  <title>LOCX Industries | Built on one workbench</title>
+  <title>LOCX Industries | Independent local-first creative software</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="canonical" href="https://locxgames.link/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LOCX Industries | Built on one workbench">
+  <meta property="og:description" content="LOCX Industries builds local-first software and Blender add-ons for storyboards, 3D assets and federal research.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <!-- LI-CANARY-20261124-7F3A -->
@@ -123,8 +127,18 @@
         <form class="newsletter-form" id="newsForm">
           <label for="newsEmail">Email address</label>
           <input type="email" id="newsEmail" name="email" required autocomplete="email" placeholder="you@example.com">
+          <fieldset class="interest-set">
+            <legend>What do you care about?</legend>
+            <label><input type="checkbox" name="interest" value="AisleSmith"> AisleSmith</label>
+            <label><input type="checkbox" name="interest" value="Storyboard Studio"> Storyboard Studio</label>
+            <label><input type="checkbox" name="interest" value="3D Studio"> 3D Studio</label>
+            <label><input type="checkbox" name="interest" value="FreeChat"> FreeChat</label>
+            <label><input type="checkbox" name="interest" value="Cosmic"> Cosmic</label>
+            <label><input type="checkbox" name="interest" value="CodeQuest"> CodeQuest</label>
+          </fieldset>
+          <label class="consent-line"><input type="checkbox" id="newsConsent" name="consent" required> Send me LOCX product updates. Unsubscribe any time.</label>
           <button class="button button-primary" type="submit">Join us</button>
-          <p class="news-fine">Product-specific updates. Unsubscribe at any time.</p>
+          <p class="news-fine">Product-specific updates. No unrelated messages.</p>
         </form>
       </div>
     </section>
@@ -156,7 +170,7 @@
         <span><strong>LOCX INDUSTRIES</strong><small>Vibe Coded. Precision Built.</small></span>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="releases.html">Products</a><a href="addons.html">Blender Addons</a><a href="about.html">About</a><a href="devlog.html">Devlog</a><a href="support.html">Support</a><a href="contact.html">Contact</a>
+        <a href="releases.html">Products</a><a href="addons.html">Blender Addons</a><a href="about.html">About</a><a href="devlog.html">Devlog</a><a href="support.html">Support</a><a href="support.html#privacy">Privacy</a><a href="support.html#licensing">Licensing</a><a href="contact.html">Contact</a>
       </nav>
       <p class="footer-legal">© <span id="year">2026</span> LOCX Industries. Founded by LK999 &amp; AB696.</p>
     </div>
