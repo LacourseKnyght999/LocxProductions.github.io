@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-type="software" data-radius="soft" data-buttons="solid">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trust, support, download verification, privacy and known limits for LOCX Industries software.">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <title>Support | LOCX Industries</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/images/locx-emblem.png" alt="">
+        <span class="brand-text"><strong>LOCX</strong><span>INDUSTRIES</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="releases.html">Products</a>
+        <a href="addons.html">Blender Addons</a>
+        <a href="about.html">About</a>
+        <a href="devlog.html">Devlog</a>
+        <a href="support.html">Support</a>
+        <a class="nav-cta" href="contact.html">Contact studio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" data-enter>
+      <div class="shell">
+        <h1>Trust &amp; support</h1>
+        <p class="page-lede">What to check before you install, what happens to your data, and where to get help.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Support topics">
+      <div class="shell support-grid">
+        <article class="support-block">
+          <h2>Downloads and verification</h2>
+          <p>Every staged release ships a checksum manifest beside the installer. Compare the SHA-256 hash of your download with the published value before running it. Storyboard Studio and 3D Studio include hashes in their release folders; FreeChat ships SHA256.txt with its builds.</p>
+        </article>
+        <article class="support-block">
+          <h2>Privacy and data</h2>
+          <p>Our tools are local by default. Storyboard Studio runs on localhost, 3D Studio talks to local services, and LOCX Legal keeps its authority index on the machine. Optional image providers, hosted model APIs and remote queries are clearly labelled and use keys you supply. We do not claim that every feature is offline in every configuration.</p>
+        </article>
+        <article class="support-block">
+          <h2>Known limits</h2>
+          <p>Some builds are unsigned, so Windows SmartScreen may warn on first launch. Legal research is not legal representation. 3D Studio requires a compatible GPU for generation workflows and uses separately installed model packs. AisleSmith builds visual fixtures, not certified racking. Check each product page for its specific prerequisites.</p>
+        </article>
+        <article class="support-block">
+          <h2>Updates and refunds</h2>
+          <p>Free products receive updates through their release channel. Paid products will list licence terms, update scope and refund conditions on the product page before purchase. We do not take payment for a product that is still in a pending release state.</p>
+        </article>
+        <article class="support-block">
+          <h2>Getting help</h2>
+          <p>Email <a href="mailto:hello@locxindustries.com">hello@locxindustries.com</a> with the product name, version, operating system and what you expected to happen. For installation problems, include the hash of the file you downloaded and any error text.</p>
+        </article>
+        <article class="support-block">
+          <h2>Installation troubleshooting</h2>
+          <p>Keep portable builds in a writable folder. If an engine reports as missing, run the setup checker shipped with the product and point it at the correct local path. If Windows blocks an unsigned installer, verify the hash first, then choose the documented "more info" path. Do not disable your antivirus.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img class="brand-mark small" src="assets/images/locx-emblem.png" alt="">
+        <span><strong>LOCX INDUSTRIES</strong><small>Vibe Coded. Precision Built.</small></span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="releases.html">Products</a><a href="addons.html">Blender Addons</a><a href="about.html">About</a><a href="devlog.html">Devlog</a><a href="support.html">Support</a><a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-legal">© <span id="year">2026</span> LOCX Industries. Founded by LK999 &amp; AB696.</p>
+    </div>
+  </footer>
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

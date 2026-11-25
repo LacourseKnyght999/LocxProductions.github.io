@@ -176,6 +176,24 @@
     });
   }
 
+  // Newsletter signup (mailto fallback until a form endpoint exists)
+  var newsForm = document.getElementById('newsForm');
+  if (newsForm) {
+    newsForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = document.getElementById('newsEmail');
+      if (!email || !email.checkValidity()) {
+        if (email) email.reportValidity();
+        return;
+      }
+      var subject = encodeURIComponent('Workbench Notes signup');
+      var body = encodeURIComponent('Please add ' + email.value.trim() + ' to Workbench Notes.');
+      window.location.href = 'mailto:hello@locxindustries.com?subject=' + subject + '&body=' + body;
+      showToast('Your email app will open to finish signup');
+      newsForm.reset();
+    });
+  }
+
   // Footer year
   var year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());

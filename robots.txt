@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# LOCX Industries - public site, crawler access disabled.
+Sitemap: https://locxgames.link/sitemap.xml

@@ -87,7 +87,22 @@ Start small and targeted:
 
 **Weeks 9–12:** revisit 3D Studio and CodeQuest promotion only if their release status and playable builds are ready. Keep the long-tail channels running.
 
-## 7. Guardrails
+## 7. Audit integration (24 Nov 2026)
+
+The website & sales conversion audit recommended a shift from studio-first to customer-first. Applied changes:
+
+- Homepage hero is now outcome-led: "Create more. Keep control." with "Explore our products" and "Meet the creators".
+- Navigation renamed from Releases to Products.
+- Homepage now features AisleSmith with its real render and prerequisites, followed by a signed founder block for LK999 and AB696 and a Workbench Notes signup.
+- A Trust & Support page now covers download verification, privacy, optional data transfers, known limits, updates, refunds and troubleshooting.
+- Devlog entries now carry dates, authors and product links.
+- The internal "Storefront / profile bio" label is gone; About now leads with "Independent by design."
+
+Priority note: the audit ranks AisleSmith first and Storyboard Studio second as launch candidates. That is a strategic hypothesis, not a status change. AisleSmith is still in verification, so it can be promoted as a product but not sold until its gates close. FreeChat remains the only product approved for sale today.
+
+Paid launch sequence: FreeChat first because it is approved; AisleSmith first for carousel-style launch content once verified; Storyboard Studio and 3D Studio after their release records are consistent and demos exist.
+
+## 8. Guardrails
 
 - Only approved products get purchase language or paid ads.
 - No invented reviews, customers, usage numbers or "best" claims.
